@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   <meta name="robots" CONTENT="noindex">
+   <title>Foost</title>
+   <meta charset="UTF-8">
+   <link rel='stylesheet' href="./personal/style.css">
+   <link rel='stylesheet' href="./personal/style1.css">
+   <link rel='stylesheet' href="./personal/style2.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+   <link rel="icon" href="./app-icon.ico" sizes="32x32" />
+   <meta name="csrf-token" content="WX1rf9rSU2TNbWEMUV2Q5q78gFOzQRKetcY8Si0z" />
+   <style>
+      
+   </style>
+   <style>
+      /* ORDER BUMPS */
+      .v2-horizontal-grid-container .order-bump-headline {
+         padding: 0 !important;
+         margin: 0 0 8px !important;
+         font-size: 18px !important;
+         line-height: 1.25em !important;
+      }
+
+      .v2-horizontal-grid-container .order-bump-description,
+      .v2-horizontal-grid-container .pay,
+      .v2-vertical-large-container .pay {
+         font-size: 12px;
+         margin-bottom: 12px;
+         font-family: Poppins, sans-serif;
+         line-height: 1.25em;
+      }
+
+      .v2-horizontal-grid-container .order-bump-description p,
+      .v2-vertical-large-container .order-bump-description p {
+         margin: 8px 0
+      }
+
+      .v2-horizontal-grid-container label {
+         opacity: 1 !important;
+         font-size: 14px !important
+      }
+
+      .v2-horizontal-grid-container .vertical {
+         border-radius: 4px;
+      }
+
+      .order-bump-wrapper:last-child .vertical {
+         border-color: #F22447 !important;
+      }
+
+      .order-bump-wrapper:last-child .payment-summary>div,
+      .order-bump-wrapper:last-child #paymentForm label {
+         color: #F22447 !important;
+      }
+
+      .v2-horizontal-grid-container .custom-checkbox {
+         border: none !important
+      }
+
+      #terms_conditions_checkbox-error {
+         display: block;
+         color: #FF3465 !important
+      }
+
+
+      .blink_me {
+         animation: blinker 2s linear infinite;
+      }
+
+      @keyframes blinker {
+         50% {
+            opacity: 0.5;
+         }
+      }
+   </style>
+
+   <link href="https://fonts.googleapis.com/css?family=Poppins|Inter" rel="stylesheet" />
+
+   <style>
+      body {
+         font-family: "Poppins" !important;
+      }
+
+      .eight-banner-section,
+      .modal {
+         overflow: scroll !important;
+         background: #6d8cf8;
+         background: -webkit-linear-gradient(to right, #c12dd1, #6d8cf8);
+         background: -webkit-gradient(linear, left top, right top, from(#c12dd1), to(#6d8cf8));
+         background: -webkit-linear-gradient(left, #c12dd1, #6d8cf8);
+         background: -o-linear-gradient(left, #c12dd1, #6d8cf8);
+         background: linear-gradient(to right, #c12dd1, #6d8cf8);
+         font-family: "Poppins" !important;
+      }
+
+      .eight-banner-section.ei-default-header {
+         padding: 170px 0 100px
+      }
+
+      .eight-banner-section:after {
+         position: absolute;
+         content: "";
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-repeat: no-repeat;
+         background-image: url(https://foost.io/landing-aug-22/wp-content/themes/appilo/img/app-showcase/shape/bl-shape.png);
+         z-index: -1;
+      }
+
+      .modal:after {
+         position: absolute;
+         content: "";
+         top: 0;
+         height: 100%;
+         width: 100%;
+         z-index: 799;
+         background-repeat: no-repeat;
+         background-image: url(https://foost.io/landing-aug-22/wp-content/themes/appilo/img/app-showcase/shape/bl-shape.png)
+      }
+
+      .modal-dialog {
+         z-index: 99999;
+      }
+
+      .alert-error {
+         background-color: #d90429;
+         width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .ei-banner-btn {
+         padding: 5px 0 25px 0
+      }
+
+      .ei-banner-btn button {
+         font-size: 20px;
+         font-weight: 800;
+         font-family: "Poppins";
+         display: inline-block;
+         -webkit-transition: 0.3s all ease-in-out;
+         -o-transition: 0.3s all ease-in-out;
+         transition: 0.3s all ease-in-out;
+         border: 0;
+      }
+
+      .ei-banner-btn button:nth-child(1) {
+         height: 55px;
+         color: #fff;
+         width: 100%;
+         line-height: 55px;
+         text-align: center;
+         border-radius: 50px;
+         margin-right: 20px;
+         border-top-right-radius: 0;
+         background-color: #ff00d6
+      }
+
+      .ei-banner-btn button:nth-child(1) i {
+         top: 5px;
+         color: #000;
+         font-size: 25px;
+         position: relative;
+         margin-right: 10px
+      }
+
+      .ei-banner-btn button:nth-child(1):hover {
+         background-color: #009cff;
+         border-top-right-radius: 50px;
+         border-bottom-left-radius: 0
+      }
+
+      .sign-up-btn-eight {
+         height: 40px;
+         width: 110px;
+         line-height: 40px;
+         border-radius: 20px;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         background-color: #29f5eb;
+         -webkit-transition: 0.3s all ease-in-out;
+         -o-transition: 0.3s all ease-in-out;
+         transition: 0.3s all ease-in-out;
+         float: right !important;
+      }
+
+      .sign-up-btn-eight a {
+         font-weight: 600;
+         display: block;
+         width: 100%;
+         font-size: 18px;
+         color: #000 !important;
+         font-family: "Poppins";
+         text-decoration: none;
+      }
+
+      .sign-up-btn-eight:hover {
+         background-color: #009cff;
+      }
+
+      .sign-up-btn-eight:hover a {
+         color: #fff !important;
+         text-decoration: none !important;
+      }
+
+      .modal-backdrop {
+         background-color: transparent;
+      }
+
+      .btn-grey {
+         background-color: #c6c6c6 !important;
+         color: #5A7386 !important;
+         font-family: "Poppins" !important;
+      }
+
+      p {
+         font-family: "Poppins" !important;
+      }
+
+      .h2Text {
+         color: #ff00d6;
+         text-align: center;
+         font-size: 28px;
+         font-weight: 800;
+         font-family: "Poppins" !important;
+      }
+
+      .listItem {
+         font-size: 16px;
+         text-align: justify;
+         font-weight: 500;
+         font-family: "Poppins" !important;
+         margin-bottom: 10px;
+      }
+
+      .pinkText {
+         color: #ff00d6;
+         font-weight: 800;
+      }
+   </style>
+
+   <style>
+      .pulsate {
+         font-size: 20px;
+         -webkit-animation: pulsate 1s ease-out;
+         -webkit-animation-iteration-count: infinite;
+         opacity: 0.5;
+      }
+
+      @-webkit-keyframes pulsate {
+         0% {
+            opacity: 0.5;
+         }
+
+         50% {
+            opacity: 1.0;
+         }
+
+         100% {
+            opacity: 0.5;
+         }
+      }
+
+      .video-container {
+         position: relative;
+         padding-bottom: 56.25%;
+         padding-top: 30px;
+         height: 0;
+         overflow: hidden;
+         margin-bottom: 20px;
+      }
+
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+
+      .modal-content,
+      .wizard-form {
+         background: #fff !important;
+         color: #5A7386 !important;
+      }
+
+      .btn-primary {
+         background-color: #ff00d6 !important;
+         font-weight: 900;
+      }
+
+      .managerName {
+         background: #fff;
+         border-radius: 10px;
+         margin-top: 10px;
+         border: 3px solid #0AA9CC;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .dot-online {
+         height: 10px;
+         width: 10px;
+         background-color: green;
+         border-radius: 50%;
+         display: inline-block;
+         margin-left: -18px;
+      }
+
+      .btn-email {
+         margin-top: 2%;
+         font-weight: 600;
+      }
+
+      .popupContent {
+         font-weight: 500;
+         font-size: 16px;
+         padding: 20px;
+         color: #5A7386 !important;
+      }
+
+      #loading {
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background: #fff url('https://thumbs.gfycat.com/ConventionalOblongFairybluebird-small.gif') no-repeat center center;
+         z-index: 9999;
+      }
+
+      .modal-header {
+         padding: 0px !important;
+         margin-top: -10px !important;
+      }
+
+      .modal-header h2 {
+         font-size: 22px;
+      }
+
+      .mtLogo {
+         margin-top: 30px;
+      }
+   </style>
+</head>
+
+<body class="eight-banner-section">
+   <div style="display:none">
+      <svg id="cart-logo" viewBox="0 0 99 87.7">
+         <path class="light"
+            d="M13.5,64.4c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8c-3.2,0-5.8-2.6-5.8-5.8C7.7,67,10.3,64.4,13.5,64.4" />
+         <circle class="light" cx="92.8" cy="65.9" r="5.8" />
+         <path class="light" d="M52.5,76.1c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8c-3.2,0-5.8-2.6-5.8-5.8
+               C46.7,78.7,49.3,76.1,52.5,76.1" />
+         <polygon class="light" points="53.2,31.6 7.2,18.6 46.1,4.6 55,7.2 54.9,26.6 92.6,13.5 45.8,0 0,16.3 0,21 8,23.9 8,55.9
+               52.9,69.4 99,51.3 99,15.7 		" />
+         <polygon class="light" points="50.8,26.7 50.9,10.3 46.2,8.9 20.4,18.1" />
+      </svg>
+      <svg id="password-icon" viewBox="-10 -3 50 50">
+         <circle class="svg-icon" cx="14.6" cy="28.1" r="14.1" />
+         <circle class="svg-icon" cx="14.6" cy="26.4" r="2.9" />
+         <path class="svg-icon"
+            d="M25.9,19.7c0,0,0-5.5,0-7.8c0-6.2-5.1-11.3-11.3-11.3S3.3,5.6,3.3,11.8c0,2.2,0,8,0,8" />
+         <line class="svg-icon" x1="14.6" y1="33.4" x2="14.6" y2="29.2" />
+      </svg>
+      <svg id="email-icon" viewBox="-4 -11 50 50">
+         <rect x="0.5" y="0.5" class="svg-icon" width="41.3" height="27.2" />
+         <polyline class="svg-icon" points="0.5,0.5 21.1,17.5 41.8,0.5 " />
+      </svg>
+      <svg id="menu-icon" viewBox="-13 -15 50 50">
+         <line class="svg-icon" x1="20" y1="0.5" x2="0" y2="0.5" />
+         <line class="svg-icon" x1="25" y1="9.5" x2="0" y2="9.5" />
+         <line class="svg-icon" x1="12" y1="17.5" x2="0" y2="17.5" />
+      </svg>
+      <svg id="check-icon" viewBox="-5 -11 50 50">
+         <polyline class="extra-thick svg-icon" points="0.4,15.3 12.4,27.3 39.3,0.4 " />
+      </svg>
+      <svg id="thin-ex-icon" viewBox="-11 -11 50 50">
+         <line class="svg-icon" x1="0.4" y1="27.3" x2="27.3" y2="0.4" />
+         <line class="svg-icon" x1="27.3" y1="27.3" x2="0.4" y2="0.4" />
+      </svg>
+      <svg id="ex-icon" viewBox="-11 -11 50 50">
+         <line class="extra-thick svg-icon" x1="0.4" y1="27.3" x2="27.3" y2="0.4" />
+         <line class="extra-thick svg-icon" x1="27.3" y1="27.3" x2="0.4" y2="0.4" />
+      </svg>
+      <svg id="continue-icon" viewBox="-13 -15 50 50">
+         <line class="svg-icon" x1="25" y1="9" x2="0" y2="9" />
+         <polyline class="svg-icon" points="16.6,17.7 25.3,9 16.6,0.4 " />
+      </svg>
+      <svg id="money-icon" viewBox="-15 -4 50 50">
+         <path class="svg-icon" d="M19.6,8.3c0,0-3.2-2.6-9.5-2.6c-6.3,0-8.6,4-8.6,4s-4.8,7.9,8.6,10.9s9.4,11.3,9.4,11.3s-1.3,4.7-9.4,4.7
+               c0,0-6.6,0-9.7-3.2" />
+         <line class="svg-icon" x1="10.4" y1="0" x2="10.4" y2="42" />
+      </svg>
+      <svg id="upsell-icon" viewBox="-2 -10 50 50">
+         <polyline class="svg-icon" points="0,8 8.2,8 17.9,29 40.8,29 46,11.9 " />
+         <line class="svg-icon" x1="28.5" y1="6.5" x2="28.5" y2="24.5" />
+         <polygon class="svg-icon" points="28.7,0.7 34.7,6 22.7,6 " />
+      </svg>
+      <svg id="template-icon" viewBox="-6 -6 50 50">
+         <rect x="0.5" y="0.5" class="svg-icon" width="37.1" height="37.1" />
+         <rect x="6.7" y="7.3" class="svg-icon" width="9.4" height="9.4" />
+         <line class="svg-icon square" x1="22" y1="7.3" x2="31.4" y2="7.3" />
+         <line class="svg-icon square" x1="22" y1="16.7" x2="31.4" y2="16.7" />
+         <line class="svg-icon square" x1="22" y1="12" x2="31.4" y2="12" />
+         <line class="svg-icon square" x1="6.7" y1="21.4" x2="31.4" y2="21.4" />
+         <rect x="6.2" y="26" class="svg-icon" width="25.8" height="4.7" />
+      </svg>
+      <svg id="orders-icon" viewBox="-2 -10 50 50">
+         <polyline class="svg-icon" points="0,0.5 8.2,0.5 17.9,21.5 40.9,21.5 46,4.5 10,4.5 " />
+         <circle class="svg-icon" cx="20.9" cy="26.3" r="2" />
+         <circle class="svg-icon" cx="38.3" cy="26.3" r="2" />
+      </svg>
+      <svg id="product-icon" viewBox="-5 -11 50 50">
+         <polyline class="svg-icon square" points="0,0.5 8.2,0.5 17.9,21.5 41,21.5 " />
+         <circle class="fill" cx="20.9" cy="26.3" r="2" />
+         <circle class="fill" cx="38.3" cy="26.3" r="2" />
+         <rect x="29.6" y="7" class="svg-icon" width="11.2" height="11.2" />
+         <rect x="19.5" y="0.5" class="svg-icon" width="5.6" height="17.8" />
+      </svg>
+      <svg id="report-icon" viewBox="-9 -6 50 50">
+         <polyline class="svg-icon" points="30.6,7.3 23.8,7.3 23.8,0.5 " />
+         <polygon class="svg-icon" points="30.6,37.6 0.5,37.6 0.5,0.5 23.8,0.5 30.6,7.4 " />
+         <line class="svg-icon square" x1="6.7" y1="7.3" x2="16.1" y2="7.3" />
+         <line class="svg-icon square" x1="6.7" y1="16.7" x2="24.4" y2="16.7" />
+         <line class="svg-icon square" x1="6.7" y1="12" x2="16.1" y2="12" />
+         <line class="svg-icon square" x1="6.7" y1="21.4" x2="24.4" y2="21.4" />
+         <line class="svg-icon square" x1="6.7" y1="26" x2="24.4" y2="26" />
+         <line class="svg-icon square" x1="6.7" y1="30.7" x2="24.4" y2="30.7" />
+      </svg>
+      <svg id="analytic-icon" viewBox="-1 -11 50 50">
+         <circle class="svg-icon" cx="15.5" cy="11.3" r="4" />
+         <circle class="svg-icon" cx="26.4" cy="22.2" r="4" />
+         <circle class="svg-icon" cx="4.5" cy="22.2" r="4" />
+         <circle class="svg-icon" cx="44.1" cy="4.5" r="4" />
+         <line class="svg-icon square" x1="18.3" y1="14.1" x2="23.6" y2="19.4" />
+         <line class="svg-icon square" x1="29.2" y1="19.4" x2="41.2" y2="7.3" />
+         <line class="svg-icon square" x1="12.7" y1="14.1" x2="7.4" y2="19.4" />
+      </svg>
+      <svg id="send-icon" viewBox="-4 -8 50 50">
+         <polygon class="svg-icon" points="1,11 23.9,33.9 41.5,0.8 " />
+         <line class="svg-icon" x1="10.6" y1="20.6" x2="41.5" y2="0.8" />
+         <polygon class="svg-icon" points="10.1,20.1 9.7,33.1 16.5,26.4 " />
+      </svg>
+      <svg id="credit-icon" viewBox="-5 -11 50 50">
+         <path class="svg-icon" d="M38.1,26.3H2.2c-0.9,0-1.7-0.7-1.7-1.7V2.2c0-0.9,0.7-1.7,1.7-1.7h35.9c0.9,0,1.7,0.7,1.7,1.7v22.5
+               C39.7,25.6,39,26.3,38.1,26.3z" />
+         <rect x="0.5" y="8" class="svg-icon fill" width="39.2" height="4" />
+      </svg>
+      <svg id="show-icon" viewBox="-6 -13 50 50">
+         <circle class="svg-icon" cx="19" cy="11.2" r="4.3" />
+         <path class="svg-icon" d="M0.6,11.1C4.2,17.5,11.1,21.8,19,21.8c7.9,0,14.8-4.3,18.5-10.6l0,0C33.8,4.8,26.9,0.5,19,0.5
+               C11.2,0.5,4.2,4.8,0.6,11.1L0.6,11.1z" />
+      </svg>
+      <svg id="hide-icon" viewBox="-6 -23 50 50">
+         <path class="svg-icon" d="M0.4,0.2L0.4,0.2C4.1,6.6,11,10.9,18.9,10.9c7.9,0,14.8-4.3,18.5-10.6l0,0" />
+      </svg>
+      <svg id="banner-icon" viewBox="-7 0 50 50">
+         <polyline class="svg-icon" points="36.2,0 36.2,49.1 18.3,39.4 0.5,49.1 0.5,0 " />
+         <circle class="svg-icon" cx="18.3" cy="20.6" r="8.5" />
+      </svg>
+      <svg id="image-icon" viewBox="-4 -8 50 50">
+         <path class="svg-icon"
+            d="M40,31.2H3.5c-1.7,0-3-1.4-3-3V3.5c0-1.7,1.4-3,3-3H40c1.7,0,3,1.4,3,3v24.7C43.1,29.9,41.7,31.2,40,31.2z" />
+         <circle class="svg-icon" cx="9.7" cy="9.3" r="3.1" />
+         <polyline class="svg-icon" points="15.6,27.4 32.4,10.6 38.9,17.2 " />
+         <polyline class="svg-icon" points="24.6,18.4 20,13.7 6.6,27.1 " />
+      </svg>
+      <svg id="previous-icon" viewBox="-17 -12 50 50">
+         <polyline class="svg-icon thick" points="12.7,0.7 1.4,12.1 12.7,23.4 		" />
+      </svg>
+      <svg id="next-icon" viewBox="-21 -12 50 50">
+         <polyline class="svg-icon thick" points="0.7,23.4 12,12 0.7,0.7 		" />
+      </svg>
+      <svg id="confirm-icon" viewBox="-4 -4 40 40">
+         <polyline class="svg-icon" points="9.5,16.4 13.6,20.6 22.9,11.3 " />
+         <circle class="svg-icon" cx="15.9" cy="15.9" r="15.4" />
+      </svg>
+      <svg id="unselected-confirm-icon" viewBox="-4 -4 40 40">
+         <circle class="svg-icon" cx="15.9" cy="15.9" r="15.4" />
+      </svg>
+      <svg id="calendar-icon" viewBox="-8 -7 50 50">
+         <rect x="0.5" y="3.9" class="svg-icon" width="34" height="30.1" />
+         <line class="svg-icon" x1="10.4" y1="4" x2="10.4" y2="0" />
+         <line class="svg-icon" x1="25.4" y1="4" x2="25.4" y2="0" />
+         <line class="svg-icon" x1="0.5" y1="11.9" x2="34.5" y2="11.9" />
+         <rect x="6.9" y="25.1" class="svg-icon fill" width="3.9" height="3.9" />
+         <rect x="15.5" y="25.1" class="svg-icon fill" width="3.9" height="3.9" />
+         <rect x="15.4" y="16.8" class="svg-icon fill" width="3.9" height="3.9" />
+         <rect x="23.9" y="16.8" class="svg-icon fill" width="3.9" height="3.9" />
+      </svg>
+      <svg id="quote-icon" viewBox="-5 -10 50 50">
+         <style>
+            .st3 {
+               fill: #1d96f3;
+            }
+         </style>
+         <path class="blue-fill" d="M0,22.3C0,10.3,6.8,2.1,17.8,0l1.8,5.9C12.8,7.5,8.4,11.8,8.1,16.8c3.2,0.4,5.8,3.2,5.8,6.6c0,3.8-3.1,6.9-6.9,6.9
+               c-3.8,0-6.9-3.1-6.9-6.9V22.3z M21.4,22.3c0-11.9,6.8-20.2,17.8-22.3L41,5.9c-6.8,1.6-11.2,5.9-11.5,10.9c3.2,0.4,5.8,3.2,5.8,6.6
+               c0,3.8-3.1,6.9-6.9,6.9c-3.8,0-6.9-3.1-6.9-6.9V22.3z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st0 {
+               fill: #5883ED;
+            }
+
+            .st1 {
+               fill: #CE4747;
+            }
+
+            .st2 {
+               fill: #FFB44F;
+            }
+
+            .st3 {
+               fill: #D6765F;
+            }
+         </style>
+         <path class="st0" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <circle class="st1" cx="24" cy="21.8" r="10" />
+         <circle class="st2" cx="40" cy="21.8" r="10" />
+         <path class="st3" d="M30,21.8c0,2.2,0.7,4.3,2,6c1.3-1.7,2-3.7,2-6s-0.7-4.3-2-6C30.7,17.5,30,19.6,30,21.8z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st4 {
+               fill: #828282;
+            }
+
+            .st5 {
+               fill: #707070;
+            }
+
+            .st6 {
+               fill: #BFBFBF;
+            }
+
+            .st7 {
+               fill: #909090;
+            }
+         </style>
+         <path class="st4" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <circle class="st5" cx="24" cy="21.8" r="10" />
+         <circle class="st6" cx="40" cy="21.8" r="10" />
+         <path class="st7" d="M30,21.8c0,2.2,0.7,4.3,2,6c1.3-1.7,2-3.7,2-6s-0.7-4.3-2-6C30.7,17.5,30,19.6,30,21.8z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st8 {
+               fill: #EFEFEF;
+            }
+
+            .st9 {
+               fill: #4287CB;
+            }
+
+            .st10 {
+               fill: #FFB44F;
+            }
+         </style>
+         <rect y="12" class="st8" width="64" height="20" />
+         <path class="st9" d="M0,12V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7V12H0z" />
+         <path class="st10" d="M64,32v10.3c0,0.9-0.8,1.7-1.7,1.7H1.7C0.8,44,0,43.2,0,42.3V32H64z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st11 {
+               fill: #EFEFEF;
+            }
+
+            .st12 {
+               fill: #7A7A7A;
+            }
+
+            .st13 {
+               fill: #BFBFBF;
+            }
+         </style>
+         <rect y="12" class="st11" width="64" height="20" />
+         <path class="st12" d="M0,12V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7V12H0z" />
+         <path class="st13" d="M64,32v10.3c0,0.9-0.8,1.7-1.7,1.7H1.7C0.8,44,0,43.2,0,42.3V32H64z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st14 {
+               fill: #EFEFEF;
+            }
+
+            .st15 {
+               fill: #D4D4D4;
+            }
+
+            .st16 {
+               fill: #FFB44F;
+            }
+         </style>
+         <path class="st14" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8" y="12" class="st15" width="48" height="8" />
+         <path class="st16" d="M62.3,44H16.7c0,0,20.7-2,47.3-24v22.3C64,43.2,63.2,44,62.3,44z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st17 {
+               fill: #EFEFEF;
+            }
+
+            .st18 {
+               fill: #D4D4D4;
+            }
+
+            .st19 {
+               fill: #BFBFBF;
+            }
+         </style>
+         <path class="st17" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8" y="12" class="st18" width="48" height="8" />
+         <path class="st19" d="M62.3,44H16.7c0,0,20.7-2,47.3-24v22.3C64,43.2,63.2,44,62.3,44z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st20 {
+               fill: #4DB3FF;
+            }
+
+            .st21 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st20" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8.1" y="12" class="st21" width="40" height="8" />
+         <rect x="16.1" y="26" class="st21" width="40" height="8" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st22 {
+               fill: #9D9D9D;
+            }
+
+            .st23 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st22" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8.1" y="12" class="st23" width="40" height="8" />
+         <rect x="16.1" y="26" class="st23" width="40" height="8" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st24 {
+               fill: #EFEFEF;
+            }
+
+            .st25 {
+               fill: #2C6FB4;
+            }
+
+            .st26 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st24" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st25"
+            d="M25,32h14c5.5,0,10-4.5,10-10v0c0-5.5-4.5-10-10-10H25c-5.5,0-10,4.5-10,10v0C15,27.5,19.5,32,25,32z" />
+         <circle class="st26" cx="25" cy="22" r="6" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st27 {
+               fill: #EFEFEF;
+            }
+
+            .st28 {
+               fill: #626262;
+            }
+
+            .st29 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st27" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st28"
+            d="M25,32h14c5.5,0,10-4.5,10-10v0c0-5.5-4.5-10-10-10H25c-5.5,0-10,4.5-10,10v0C15,27.5,19.5,32,25,32z" />
+         <circle class="st29" cx="25" cy="22" r="6" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st30 {
+               fill: #EFEFEF;
+            }
+
+            .st31 {
+               fill: #297CB6;
+            }
+
+            .st32 {
+               fill: #E04655;
+            }
+
+            .st33 {
+               fill: #259978;
+            }
+         </style>
+         <path class="st30" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st31" d="M10,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st32" d="M26,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st33" d="M41,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+      </svg>
+      <svg viewBox="0 0 64 44">
+         <style>
+            .st34 {
+               fill: #EFEFEF;
+            }
+
+            .st35 {
+               fill: #696969;
+            }
+
+            .st36 {
+               fill: #767676;
+            }
+
+            .st37 {
+               fill: #737373;
+            }
+         </style>
+         <path class="st34" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st35" d="M10,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st36" d="M26,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st37" d="M41,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+      </svg>
+      <svg id="mastercard" viewBox="0 0 64 44">
+         <style>
+            .st0 {
+               fill: #5883ED;
+            }
+
+            .st1 {
+               fill: #CE4747;
+            }
+
+            .st2 {
+               fill: #FFB44F;
+            }
+
+            .st3 {
+               fill: #D6765F;
+            }
+         </style>
+         <path class="st0" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <circle class="st1" cx="24" cy="21.8" r="10" />
+         <circle class="st2" cx="40" cy="21.8" r="10" />
+         <path class="st3" d="M30,21.8c0,2.2,0.7,4.3,2,6c1.3-1.7,2-3.7,2-6s-0.7-4.3-2-6C30.7,17.5,30,19.6,30,21.8z" />
+      </svg>
+      <svg id="mastercard-gs" viewBox="0 0 64 44">
+         <style>
+            .st4 {
+               fill: #828282;
+            }
+
+            .st5 {
+               fill: #707070;
+            }
+
+            .st6 {
+               fill: #BFBFBF;
+            }
+
+            .st7 {
+               fill: #909090;
+            }
+         </style>
+         <path class="st4" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <circle class="st5" cx="24" cy="21.8" r="10" />
+         <circle class="st6" cx="40" cy="21.8" r="10" />
+         <path class="st7" d="M30,21.8c0,2.2,0.7,4.3,2,6c1.3-1.7,2-3.7,2-6s-0.7-4.3-2-6C30.7,17.5,30,19.6,30,21.8z" />
+      </svg>
+      <svg id="visa" viewBox="0 0 64 44">
+         <style>
+            .st8 {
+               fill: #fff;
+            }
+
+            .st9 {
+               fill: #4287CB;
+            }
+
+            .st10 {
+               fill: #FFB44F;
+            }
+         </style>
+         <rect y="12" class="st8" width="64" height="20" />
+         <path class="st9" d="M0,12V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7V12H0z" />
+         <path class="st10" d="M64,32v10.3c0,0.9-0.8,1.7-1.7,1.7H1.7C0.8,44,0,43.2,0,42.3V32H64z" />
+      </svg>
+      <svg id="visa-grey" viewBox="0 0 64 44">
+         <style>
+            .st8 {
+               fill: #fff;
+            }
+
+            .st9 {
+               fill: #4287CB;
+            }
+
+            .st10 {
+               fill: #FFB44F;
+            }
+         </style>
+         <rect style="fill: #EFEFEF" y="12" class="st8" width="64" height="20" />
+         <path class="st9" d="M0,12V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7V12H0z" />
+         <path class="st10" d="M64,32v10.3c0,0.9-0.8,1.7-1.7,1.7H1.7C0.8,44,0,43.2,0,42.3V32H64z" />
+      </svg>
+      <svg id="visa-gs" viewBox="0 0 64 44">
+         <style>
+            .st11 {
+               fill: #fff;
+            }
+
+            .st12 {
+               fill: #7A7A7A;
+            }
+
+            .st13 {
+               fill: #BFBFBF;
+            }
+         </style>
+         <rect y="12" class="st11" width="64" height="20" />
+         <path class="st12" d="M0,12V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7V12H0z" />
+         <path class="st13" d="M64,32v10.3c0,0.9-0.8,1.7-1.7,1.7H1.7C0.8,44,0,43.2,0,42.3V32H64z" />
+      </svg>
+      <svg id="discover" viewBox="0 0 64 44">
+         <style>
+            .st14 {
+               fill: #fff;
+            }
+
+            .st15 {
+               fill: #D4D4D4;
+            }
+
+            .st16 {
+               fill: #FFB44F;
+            }
+         </style>
+         <path class="st14" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8" y="12" class="st15" width="48" height="8" />
+         <path class="st16" d="M62.3,44H16.7c0,0,20.7-2,47.3-24v22.3C64,43.2,63.2,44,62.3,44z" />
+      </svg>
+      <svg id="discover-gs" viewBox="0 0 64 44">
+         <style>
+            .st17 {
+               fill: #fff;
+            }
+
+            .st18 {
+               fill: #D4D4D4;
+            }
+
+            .st19 {
+               fill: #BFBFBF;
+            }
+         </style>
+         <path class="st17" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8" y="12" class="st18" width="48" height="8" />
+         <path class="st19" d="M62.3,44H16.7c0,0,20.7-2,47.3-24v22.3C64,43.2,63.2,44,62.3,44z" />
+      </svg>
+      <svg id="discover-grey" viewBox="0 0 64 44">
+         <style>
+            .st14 {
+               fill: #fff;
+            }
+
+            .st15 {
+               fill: #D4D4D4;
+            }
+
+            .st16 {
+               fill: #FFB44F;
+            }
+         </style>
+         <path style="fill: #EFEFEF" class="st14" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8" y="12" class="st15" width="48" height="8" />
+         <path class="st16" d="M62.3,44H16.7c0,0,20.7-2,47.3-24v22.3C64,43.2,63.2,44,62.3,44z" />
+      </svg>
+      <svg id="amex" viewBox="0 0 64 44">
+         <style>
+            .st20 {
+               fill: #4DB3FF;
+            }
+
+            .st21 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st20" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8.1" y="12" class="st21" width="40" height="8" />
+         <rect x="16.1" y="26" class="st21" width="40" height="8" />
+      </svg>
+      <svg id="amex-gs" viewBox="0 0 64 44">
+         <style>
+            .st22 {
+               fill: #9D9D9D;
+            }
+
+            .st23 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st22" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <rect x="8.1" y="12" class="st23" width="40" height="8" />
+         <rect x="16.1" y="26" class="st23" width="40" height="8" />
+      </svg>
+      <svg id="dinersclub" viewBox="0 0 64 44">
+         <style>
+            .st24 {
+               fill: #fff;
+            }
+
+            .st25 {
+               fill: #2C6FB4;
+            }
+
+            .st26 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st24" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st25"
+            d="M25,32h14c5.5,0,10-4.5,10-10v0c0-5.5-4.5-10-10-10H25c-5.5,0-10,4.5-10,10v0C15,27.5,19.5,32,25,32z" />
+         <circle class="st26" cx="25" cy="22" r="6" />
+      </svg>
+      <svg id="dinersclub-gs" viewBox="0 0 64 44">
+         <style>
+            .st27 {
+               fill: #fff;
+            }
+
+            .st28 {
+               fill: #626262;
+            }
+
+            .st29 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path class="st27" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st28"
+            d="M25,32h14c5.5,0,10-4.5,10-10v0c0-5.5-4.5-10-10-10H25c-5.5,0-10,4.5-10,10v0C15,27.5,19.5,32,25,32z" />
+         <circle class="st29" cx="25" cy="22" r="6" />
+      </svg>
+      <svg id="dinersclub-grey" viewBox="0 0 64 44">
+         <style>
+            .st24 {
+               fill: #fff;
+            }
+
+            .st25 {
+               fill: #2C6FB4;
+            }
+
+            .st26 {
+               fill: #FFFFFF;
+            }
+         </style>
+         <path style="fill: #EFEFEF" class="st24" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st25"
+            d="M25,32h14c5.5,0,10-4.5,10-10v0c0-5.5-4.5-10-10-10H25c-5.5,0-10,4.5-10,10v0C15,27.5,19.5,32,25,32z" />
+         <circle class="st26" cx="25" cy="22" r="6" />
+      </svg>
+      <svg id="jcb" viewBox="0 0 64 44">
+         <style>
+            .st30 {
+               fill: #fff;
+            }
+
+            .st31 {
+               fill: #297CB6;
+            }
+
+            .st32 {
+               fill: #E04655;
+            }
+
+            .st33 {
+               fill: #259978;
+            }
+         </style>
+         <path class="st30" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st31" d="M10,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st32" d="M26,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st33" d="M41,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+      </svg>
+      <svg id="jcb-gs" viewBox="0 0 64 44">
+         <style>
+            .st34 {
+               fill: #fff;
+            }
+
+            .st35 {
+               fill: #696969;
+            }
+
+            .st36 {
+               fill: #767676;
+            }
+
+            .st37 {
+               fill: #737373;
+            }
+         </style>
+         <path class="st34" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st35" d="M10,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st36" d="M26,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st37" d="M41,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+      </svg>
+      <svg id="jcb-grey" viewBox="0 0 64 44">
+         <style>
+            .st30 {
+               fill: #fff;
+            }
+
+            .st31 {
+               fill: #297CB6;
+            }
+
+            .st32 {
+               fill: #E04655;
+            }
+
+            .st33 {
+               fill: #259978;
+            }
+         </style>
+         <path style="fill: #EFEFEF" class="st30" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st31" d="M10,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st32" d="M26,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+         <path class="st33" d="M41,35h6.8c2.9,0,5.2-2.3,5.2-5.2V9h-6.8c-2.9,0-5.2,2.3-5.2,5.2V35z" />
+      </svg>
+      <svg id="paypal" viewBox="0 0 64 44">
+         <style>
+            .st38 {
+               fill: #EFEFEF;
+            }
+
+            .st39 {
+               fill: #003087;
+            }
+
+            .st40 {
+               fill: #009CDE;
+            }
+
+            .st41 {
+               fill: #012169;
+            }
+         </style>
+         <path class="st38" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st41"
+            d="M43.6,24.3c0.5-0.8,0.9-1.8,1.1-3c0.2-1,0.2-1.9,0.1-2.7c-0.1-0.8-0.4-1.5-0.9-2.1c-0.3-0.3-0.7-0.6-1.1-0.9
+               l0,0l0,0l0,0c0.2-1,0.2-1.8,0-2.6c-0.2-0.7-0.5-1.4-1.1-2c-1.1-1.3-3.2-1.9-6.1-1.9h-8c-0.6,0-1,0.4-1.1,0.9l-3.3,21.1
+               c0,0.2,0,0.4,0.1,0.5c0.1,0.1,0.3,0.2,0.5,0.2h5l0,0l-0.3,2.2c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.3,0.2,0.4,0.2h4.2
+               c0.5,0,0.9-0.3,1-0.8l0-0.2l0.8-5l0.1-0.3c0.1-0.5,0.5-0.9,1-0.9h0.6c2.1,0,3.9-0.5,5.2-1.4C42.5,25.8,43.1,25.1,43.6,24.3z" />
+         <path class="st39" d="M31.3,15.7c0.1-0.3,0.3-0.6,0.6-0.7c0.1-0.1,0.3-0.1,0.4-0.1h6.3c0.7,0,1.4,0,2.1,0.2c0.2,0,0.4,0.1,0.5,0.1
+               c0.2,0,0.3,0.1,0.5,0.1c0.1,0,0.2,0,0.2,0.1c0.3,0.1,0.6,0.2,0.9,0.4c0.3-2,0-3.4-1.1-4.6c-1.2-1.4-3.3-1.9-6.1-1.9h-8
+               c-0.6,0-1,0.4-1.1,1l-3.3,21.1c-0.1,0.4,0.3,0.8,0.7,0.8h4.9l1.2-7.8L31.3,15.7z" />
+         <path class="st40" d="M42.7,15.7L42.7,15.7L42.7,15.7c0,0.2-0.1,0.3-0.1,0.5c-1.1,5.4-4.7,7.3-9.2,7.3h-2.3c-0.6,0-1,0.4-1.1,1v0
+               c0,0,0,0,0,0L28.7,32l-0.3,2.2c-0.1,0.4,0.2,0.7,0.6,0.7h4.2c0.5,0,0.9-0.4,1-0.8l0-0.2l0.8-5l0.1-0.3c0.1-0.5,0.5-0.8,1-0.8h0.6
+               c4,0,7.2-1.6,8.1-6.4c0.4-2,0.2-3.6-0.8-4.8C43.6,16.2,43.2,15.9,42.7,15.7z" />
+         <path class="st41" d="M41.6,15.2c-0.2,0-0.3-0.1-0.5-0.1c-0.2,0-0.3-0.1-0.5-0.1c-0.6-0.1-1.3-0.2-2.1-0.2h-6.3
+               c-0.2,0-0.3,0-0.4,0.1c-0.3,0.1-0.5,0.4-0.6,0.7L30,24.1l0,0.2c0.1-0.6,0.6-1,1.1-1h2.3c4.6,0,8.2-1.9,9.2-7.3
+               c0-0.2,0.1-0.3,0.1-0.5c-0.3-0.1-0.6-0.3-0.9-0.4C41.8,15.3,41.7,15.3,41.6,15.2z" />
+      </svg>
+      <svg id="paypal-gs" viewBox="0 0 64 44">
+         <style>
+            .st43 {
+               fill: #EFEFEF;
+            }
+
+            .st44 {
+               fill: #1F1F1F;
+            }
+
+            .st45 {
+               fill: #2B2B2B;
+            }
+
+            .st46 {
+               fill: #747474;
+            }
+         </style>
+         <path class="st43" d="M62.3,44H1.7C0.8,44,0,43.2,0,42.3V1.7C0,0.8,0.8,0,1.7,0h60.6C63.2,0,64,0.8,64,1.7v40.6
+               C64,43.2,63.2,44,62.3,44z" />
+         <path class="st44"
+            d="M43.6,24.3c0.5-0.8,0.9-1.8,1.1-3c0.2-1,0.2-1.9,0.1-2.7c-0.1-0.8-0.4-1.5-0.9-2.1c-0.3-0.3-0.7-0.6-1.1-0.9
+               l0,0l0,0l0,0c0.2-1,0.2-1.8,0-2.6c-0.2-0.7-0.5-1.4-1.1-2c-1.1-1.3-3.2-1.9-6.1-1.9h-8c-0.6,0-1,0.4-1.1,0.9l-3.3,21.1
+               c0,0.2,0,0.4,0.1,0.5c0.1,0.1,0.3,0.2,0.5,0.2h5l0,0l-0.3,2.2c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.3,0.2,0.4,0.2h4.2
+               c0.5,0,0.9-0.3,1-0.8l0-0.2l0.8-5l0.1-0.3c0.1-0.5,0.5-0.9,1-0.9h0.6c2.1,0,3.9-0.5,5.2-1.4C42.5,25.8,43.1,25.1,43.6,24.3z" />
+         <path class="st45" d="M31.3,15.7c0.1-0.3,0.3-0.6,0.6-0.7c0.1-0.1,0.3-0.1,0.4-0.1h6.3c0.7,0,1.4,0,2.1,0.2c0.2,0,0.4,0.1,0.5,0.1
+               c0.2,0,0.3,0.1,0.5,0.1c0.1,0,0.2,0,0.2,0.1c0.3,0.1,0.6,0.2,0.9,0.4c0.3-2,0-3.4-1.1-4.6c-1.2-1.4-3.3-1.9-6.1-1.9h-8
+               c-0.6,0-1,0.4-1.1,1l-3.3,21.1c-0.1,0.4,0.3,0.8,0.7,0.8h4.9l1.2-7.8L31.3,15.7z" />
+         <path class="st46" d="M42.7,15.7L42.7,15.7L42.7,15.7c0,0.2-0.1,0.3-0.1,0.5c-1.1,5.4-4.7,7.3-9.2,7.3h-2.3c-0.6,0-1,0.4-1.1,1v0
+               c0,0,0,0,0,0L28.7,32l-0.3,2.2c-0.1,0.4,0.2,0.7,0.6,0.7h4.2c0.5,0,0.9-0.4,1-0.8l0-0.2l0.8-5l0.1-0.3c0.1-0.5,0.5-0.8,1-0.8h0.6
+               c4,0,7.2-1.6,8.1-6.4c0.4-2,0.2-3.6-0.8-4.8C43.6,16.2,43.2,15.9,42.7,15.7z" />
+         <path class="st44" d="M41.6,15.2c-0.2,0-0.3-0.1-0.5-0.1c-0.2,0-0.3-0.1-0.5-0.1c-0.6-0.1-1.3-0.2-2.1-0.2h-6.3
+               c-0.2,0-0.3,0-0.4,0.1c-0.3,0.1-0.5,0.4-0.6,0.7L30,24.1l0,0.2c0.1-0.6,0.6-1,1.1-1h2.3c4.6,0,8.2-1.9,9.2-7.3
+               c0-0.2,0.1-0.3,0.1-0.5c-0.3-0.1-0.6-0.3-0.9-0.4C41.8,15.3,41.7,15.3,41.6,15.2z" />
+      </svg>
+      <svg id="loader-icon" viewBox="-15 -13 50 50">
+         <circle cx="9.7" cy="1.4" r="1.4" />
+         <circle cx="9.7" cy="20.3" r="1.4" />
+         <circle cx="1.4" cy="15.7" r="1.4" />
+         <circle cx="1.4" cy="6.2" r="1.4" />
+         <circle cx="17.9" cy="15.7" r="1.4" />
+         <circle cx="17.9" cy="6.2" r="1.4" />
+      </svg>
+      <svg id="shop-icon" viewBox="-6 -8 50 50">
+         <polyline class="svg-icon" points="37,12.6 37,32.2 3,32.2 3,12.7 " />
+         <g>
+            <path class="svg-icon" d="M10.4,8.5c0,3-3.1,5.4-6.2,4.7c-2.2-0.5-3.7-2.7-3.7-5l0-3.2l4.9-4.5H35l4.2,4.2l0,3.7c0,2.5-1.8,4.7-4.3,5
+                  c-2.9,0.3-5.3-2-5.3-4.8" />
+            <path class="svg-icon" d="M10.4,8.5c0,2.6,2.1,4.8,4.8,4.8S20,11.2,20,8.5" />
+            <path class="svg-icon" d="M20,8.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8" />
+         </g>
+         <polyline class="svg-icon" points="24.8,32.2 24.8,18.1 33.1,18.1 33.1,32.2 " />
+         <rect x="10" y="18.1" class="svg-icon" width="8.3" height="6.2" />
+      </svg>
+      <svg id="url-icon" viewBox="-7 -7 50 50">
+         <circle class="svg-icon" cx="18.7" cy="18.7" r="18.2" />
+         <path
+            d="M31.8,31.5c-0.5,1-7.9,5.8-7.9,4.2c0-1.9-2-2.1-2.8-3.5c-0.3-0.5-0.6-1-1-1.5c-0.5-0.6-1.1-1.1-1.2-1.9
+               c-0.2-1.3,0.5-2.4,1.1-3.5c0.3-0.5,0.5-0.8,0.4-1.4c-0.1-0.5-1.9-0.7-2.6-0.9c-0.5-0.2-1.3-0.6-1.7-1c-0.6-0.5-0.7-1.3-1.5-1.6
+               c-0.7-0.3-1.4-0.4-2.1-0.7c-1.7-0.6-4.6-1.1-5.2-3.1c-0.2-0.9-0.4-1.4-1-2.2C6,14,5.7,13.7,5.5,13.2C5.4,13,5.3,12.2,5,12
+               c-0.1,0-0.5,1.4-0.5,0.9C4.2,11.4,3.6,10.6,3.4,9c0,0,5-7.1,11.5-8.1c0.8-0.1,6.9-1.4,9.5,0.8c-0.4,0.2-2.3,1.2-2,1.9
+               c0.1,0.4,0.9,0.3,1,0.6c0.2,0.4-0.6,1-1,1.1c-0.5,0.1-0.4-0.4-0.9,0c-0.4,0.3-1.8,2.6-1.9,3.9c-0.1,1.4-1.7,2.4-1.3,4
+               c0.2,0.8,0.7,2.1-0.4,1.1c-1-0.8-2.1-2.1-3.4-2c-1.3,0.1-2.8,0.6-3.4,1.8c-0.6,1.1-0.1,3.5,1.5,3.4c0.8-0.1,2-1.6,2.7-1.3
+               c0.6,0.3-0.1,1.7,0.3,2c0.4,0.3,0.9,0.3,1.2,0.7c0.6,0.7,0.3,1.6,0.7,2.3c0.5,1,1.9,1.3,3,1.2c2.2-0.1,3-2.6,5.5-1.9
+               c1.1,0.3,2,1,3,1.4c0.7,0.3,1.4,0.4,2.1,0.6c0.7,0.2,1.1,0.5,1.3,1.2c0.3,0.7,0.1,1.2,1,1.4c1.2,0.3,1.2-0.2,2.2,0.9" />
+         <circle class="svg-icon" cx="18.7" cy="18.7" r="18.2" />
+      </svg>
+      <svg id="integrations-icon" viewBox="-2 -9 50 50">
+         <path class="svg-icon"
+            d="M9,30.2L9,30.2C5.5,26.7,5.5,21,9,17.5l3-3l12.7,12.7l-3,3C18.2,33.7,12.5,33.7,9,30.2z" />
+         <line class="svg-icon" x1="15.4" y1="17.9" x2="20.3" y2="13" />
+         <line class="svg-icon" x1="21" y1="23.6" x2="26" y2="18.6" />
+         <path class="svg-icon" d="M9.1,30.3c0,0-3.7,5.1-8.9,2.6" />
+         <path class="svg-icon"
+            d="M35.6,3.5L35.6,3.5c3.5,3.5,3.5,9.2,0,12.7l-3,3L19.9,6.5l3-3C26.5,0,32.1,0,35.6,3.5z" />
+         <path class="svg-icon" d="M35.9,3.8c0,0,3.7-5.1,8.9-2.6" />
+      </svg>
+      <svg id="producttypes-icon" viewBox="-8 -7 50 50">
+         <rect x="16.4" y="16.2" class="svg-icon" width="17.7" height="17.7" />
+         <rect x="0.5" y="0.5" class="svg-icon" width="8.9" height="33.4" />
+         <rect x="20.9" y="-3.8" transform="matrix(2.813553e-11 1 -1 2.813553e-11 30.2543 -20.3973)" class="svg-icon"
+            width="8.9" height="17.5" />
+      </svg>
+      <svg id="abtest-icon" viewBox="-9 -13 50 50">
+         <line class="svg-icon" x1="18.4" y1="18.3" x2="0" y2="18.1" />
+         <line class="svg-icon" x1="31" y1="18.3" x2="26.1" y2="18.3" />
+         <circle class="svg-icon" cx="22.4" cy="18.3" r="4" />
+         <line class="svg-icon" x1="12.6" y1="4.5" x2="31" y2="4.7" />
+         <line class="svg-icon" x1="0" y1="4.5" x2="4.9" y2="4.5" />
+         <circle class="svg-icon" cx="8.5" cy="4.5" r="4" />
+      </svg>
+      <svg id="nofees-icon" viewBox="-8 -8 50 50">
+         <polyline class="svg-icon" points="16.8,8.4 33.2,8.4 33.2,25 25.2,25 " />
+         <polyline class="svg-icon" points="16.8,25 0.5,25 0.5,8.4 8.5,8.4 " />
+         <path class="svg-icon" d="M16.8,8.4c3.6,0,6.4,3.7,6.4,8.3" />
+         <path class="svg-icon" d="M16.8,25c-3.6,0-6.4-3.7-6.4-8.3" />
+         <line class="svg-icon" x1="0.5" y1="0.4" x2="33.2" y2="33.1" />
+      </svg>
+      <svg id="apple-pay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.5 106">
+         <style>
+            .st0 {
+               fill: #fff
+            }
+         </style>
+         <path id="XMLID_4_"
+            d="M150.7 0h-139c-1 0-2.1.1-3.1.3-1 .2-2 .5-3 1-.9.4-1.8 1.1-2.5 1.8S1.7 4.7 1.3 5.6c-.5.9-.8 1.9-1 3-.2 1-.2 2.1-.3 3.1v82.5c0 1 .1 2.1.3 3.1.2 1 .5 2 1 3 .5.9 1.1 1.8 1.8 2.5s1.6 1.4 2.5 1.8c.9.5 1.9.8 3 1 1 .2 2.1.2 3.1.3h142.1c1 0 2.1-.1 3.1-.3 1-.2 2-.5 3-1 .9-.5 1.8-1.1 2.5-1.8s1.4-1.6 1.8-2.5c.5-.9.8-1.9 1-3 .2-1 .2-2.1.3-3.1v-1.4-78-1.7-1.4c0-1-.1-2.1-.3-3.1-.2-1-.5-2-1-3-.5-.9-1.1-1.8-1.8-2.5s-1.6-1.4-2.5-1.8c-.9-.5-1.9-.8-3-1-1-.2-2.1-.2-3.1-.3H150.7z" />
+         <path id="XMLID_3_" class="st0"
+            d="M150.7 3.5H153.8c.8 0 1.7.1 2.6.2.8.1 1.4.3 2 .6.6.3 1.1.7 1.6 1.2s.9 1 1.2 1.6c.3.6.5 1.2.6 2 .2.9.2 1.8.2 2.6v82.5c0 .8-.1 1.7-.2 2.6-.1.7-.3 1.4-.6 2-.3.6-.7 1.1-1.2 1.6s-1 .9-1.6 1.2c-.6.3-1.2.5-2 .6-.9.2-1.8.2-2.6.2H11.7c-.7 0-1.7-.1-2.6-.2-.7-.1-1.4-.3-2-.7-.6-.3-1.1-.7-1.6-1.2s-.9-1-1.2-1.6c-.3-.6-.5-1.2-.6-2-.2-.9-.2-1.8-.2-2.6v-81-1.4c0-.8.1-1.7.2-2.6.1-.7.3-1.4.6-2 .3-.6.7-1.1 1.2-1.6s1-.9 1.6-1.2c.6-.3 1.2-.5 2-.6.9-.2 1.8-.2 2.6-.2h139" />
+         <path
+            d="M45.2 35.6c1.4-1.8 2.4-4.2 2.1-6.6-2.1.1-4.6 1.4-6.1 3.1-1.3 1.5-2.5 4-2.2 6.3 2.4.3 4.7-1 6.2-2.8M47.3 39c-3.4-.2-6.3 1.9-7.9 1.9-1.6 0-4.1-1.8-6.8-1.8-3.5.1-6.7 2-8.5 5.2-3.6 6.3-1 15.6 2.6 20.7 1.7 2.5 3.8 5.3 6.5 5.2 2.6-.1 3.6-1.7 6.7-1.7s4 1.7 6.8 1.6c2.8-.1 4.6-2.5 6.3-5.1 2-2.9 2.8-5.7 2.8-5.8-.1-.1-5.5-2.1-5.5-8.3-.1-5.2 4.2-7.7 4.4-7.8-2.3-3.6-6.1-4-7.4-4.1" />
+         <g>
+            <path
+               d="M76.7 31.9c7.4 0 12.5 5.1 12.5 12.4 0 7.4-5.2 12.5-12.7 12.5h-8.1v12.9h-5.9V31.9h14.2zm-8.3 20h6.7c5.1 0 8-2.8 8-7.5 0-4.8-2.9-7.5-8-7.5h-6.8v15zM90.7 62c0-4.8 3.7-7.8 10.3-8.2l7.6-.4v-2.1c0-3.1-2.1-4.9-5.5-4.9-3.3 0-5.3 1.6-5.8 4h-5.4c.3-5 4.6-8.7 11.4-8.7 6.7 0 11 3.5 11 9.1v19h-5.4v-4.5h-.1c-1.6 3.1-5.1 5-8.7 5-5.6 0-9.4-3.4-9.4-8.3zm17.9-2.5v-2.2l-6.8.4c-3.4.2-5.3 1.7-5.3 4.1 0 2.4 2 4 5 4 4 0 7.1-2.7 7.1-6.3zM119.3 80v-4.6c.4.1 1.4.1 1.8.1 2.6 0 4-1.1 4.9-3.9 0-.1.5-1.7.5-1.7l-10-27.6h6.1l7 22.5h.1l7-22.5h6l-10.3 29.1c-2.4 6.7-5.1 8.8-10.8 8.8-.4-.1-1.8-.1-2.3-.2z" />
+         </g>
+      </svg>
+      <svg id="google-pay" viewBox="0 0 425 272" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="GooglePay_mark_800_gray">
+               <g id="border">
+                  <path
+                     d="M386.731012,0.0897642745 L38.039747,0.0897642745 C36.587241,0.0897642745 35.1321687,0.0897642745 33.6822289,0.0974583552 C32.4581205,0.107717129 31.2365783,0.120540597 30.0124699,0.153881613 C27.3461205,0.225693033 24.6566747,0.38213934 22.0236867,0.856607648 C19.3496386,1.33620534 16.8603614,2.12100157 14.4326747,3.35718387 C12.0434819,4.57028392 9.85959036,6.15782923 7.96312048,8.05057307 C6.06921687,9.94588161 4.4806988,12.1258711 3.26685542,14.5161655 C2.02991566,16.9423656 1.24463855,19.4301184 0.767313253,22.1050938 C0.289987952,24.739034 0.133445783,27.4242682 0.0615903614,30.0864201 C0.0282289157,31.3097789 0.0128313253,32.5305731 0.00513253012,33.7513672 C-0.00256626506,35.2029838 1.08420217e-19,36.6546003 1.08420217e-19,38.1087816 L1.08420217e-19,233.841064 C1.08420217e-19,235.295246 -0.00256626506,236.744298 0.00513253012,238.198479 C0.0128313253,239.419273 0.0282289157,240.642632 0.0615903614,241.863426 C0.133445783,244.523013 0.289987952,247.210812 0.767313253,249.842188 C1.24463855,252.517163 2.02991566,255.004916 3.26685542,257.43368 C4.4806988,259.82141 6.06921687,262.003964 7.96312048,263.896708 C9.85959036,265.792017 12.0434819,267.379562 14.4326747,268.590097 C16.8603614,269.828844 19.3496386,270.613641 22.0236867,271.095803 C24.6566747,271.565142 27.3461205,271.724153 30.0124699,271.795964 C31.2365783,271.824176 32.4581205,271.842129 33.6822289,271.847258 C35.1321687,271.857517 36.587241,271.857517 38.039747,271.857517 L386.731012,271.857517 C388.180952,271.857517 389.636024,271.857517 391.085964,271.847258 C392.307506,271.842129 393.529048,271.824176 394.758289,271.795964 C397.419506,271.724153 400.108952,271.565142 402.747072,271.095803 C405.418554,270.613641 407.907831,269.828844 410.338084,268.590097 C412.727277,267.379562 414.906036,265.792017 416.805072,263.896708 C418.69641,262.003964 420.284928,259.82141 421.501337,257.43368 C422.740843,255.004916 423.52612,252.517163 424.00088,249.842188 C424.478205,247.210812 424.632181,244.523013 424.704036,241.863426 C424.737398,240.642632 424.752795,239.419273 424.760494,238.198479 C424.770759,236.744298 424.770759,235.295246 424.770759,233.841064 L424.770759,38.1087816 C424.770759,36.6546003 424.770759,35.2029838 424.760494,33.7513672 C424.752795,32.5305731 424.737398,31.3097789 424.704036,30.0864201 C424.632181,27.4242682 424.478205,24.739034 424.00088,22.1050938 C423.52612,19.4301184 422.740843,16.9423656 421.501337,14.5161655 C420.284928,12.1258711 418.69641,9.94588161 416.805072,8.05057307 C414.906036,6.15782923 412.727277,4.57028392 410.338084,3.35718387 C407.907831,2.12100157 405.418554,1.33620534 402.747072,0.856607648 C400.108952,0.38213934 397.419506,0.225693033 394.758289,0.153881613 C393.529048,0.120540597 392.307506,0.107717129 391.085964,0.0974583552 C389.636024,0.0897642745 388.180952,0.0897642745 386.731012,0.0897642745"
+                     id="Fill-1" fill="#3C4043"></path>
+                  <path
+                     d="M386.731012,9.14826192 L391.021807,9.155956 C392.181759,9.16365008 393.344277,9.17647355 394.511928,9.20981456 C396.54441,9.26367313 398.923337,9.37395495 401.14059,9.77148245 C403.065289,10.1177161 404.682036,10.646043 406.23206,11.4334039 C407.76412,12.210506 409.165301,13.2312541 410.38941,14.4520482 C411.618651,15.6831011 412.640024,17.0859885 413.427867,18.6324987 C414.213145,20.1713148 414.736663,21.776813 415.083108,23.7157213 C415.478313,25.9085343 415.588663,28.2911346 415.642554,30.3351954 C415.675916,31.4867428 415.691313,32.6408549 415.696446,33.8231786 C415.706711,35.2517129 415.706711,36.6776826 415.706711,38.1087816 L415.706711,233.841064 C415.706711,235.272163 415.706711,236.698133 415.696446,238.154879 C415.691313,239.308991 415.675916,240.463103 415.642554,241.61978 C415.588663,243.658711 415.478313,246.041312 415.077976,248.257207 C414.736663,250.170468 414.213145,251.775966 413.422735,253.322477 C412.637458,254.866422 411.618651,256.266745 410.394542,257.490104 C409.162735,258.721157 407.766687,259.736775 406.216663,260.521572 C404.676904,261.306368 403.065289,261.834695 401.158554,262.175799 C398.895108,262.578456 396.418663,262.691302 394.552988,262.740031 C393.380205,262.768243 392.212554,262.783631 391.014108,262.788761 C389.589831,262.799019 388.157855,262.799019 386.731012,262.799019 L38.039747,262.799019 C38.0217831,262.799019 38.0038193,262.799019 37.9832892,262.799019 C36.5744096,262.799019 35.1603976,262.799019 33.7258554,262.788761 C32.5556386,262.783631 31.387988,262.768243 30.2588313,262.742596 C28.3495301,262.691302 25.8705181,262.578456 23.6276024,262.178364 C21.7029036,261.834695 20.0912892,261.306368 18.531,260.511313 C16.9963735,259.734211 15.6003253,258.718592 14.3685181,257.484974 C13.1469759,256.266745 12.1307349,254.868987 11.3454578,253.322477 C10.5576145,251.778531 10.0315301,250.167904 9.68508434,248.23156 C9.28731325,246.018229 9.17696386,243.648453 9.12050602,241.61978 C9.08971084,240.460539 9.07687952,239.298732 9.06918072,238.147185 L9.06404819,234.741272 L9.06404819,37.2111388 L9.06918072,33.8129199 C9.07687952,32.6511137 9.08971084,31.4918722 9.12050602,30.3326307 C9.17696386,28.3013934 9.28731325,25.9290519 9.69021687,23.6977685 C10.0315301,21.7819424 10.5576145,20.1687501 11.3480241,18.6171105 C12.1281687,17.0834238 13.1469759,15.6831011 14.3736506,14.4571776 C15.597759,13.2312541 17.001506,12.2156354 18.5438313,11.4308392 C20.0861566,10.6434783 21.7029036,10.1177161 23.6276024,9.77148245 C25.8448554,9.37395495 28.2237831,9.26367313 30.2613976,9.20981456 C31.4213494,9.17647355 32.5838675,9.16365008 33.7361205,9.155956 L38.039747,9.14826192 L386.731012,9.14826192"
+                     id="wihit-fill" fill="#FFFFFE"></path>
+               </g>
+               <g id="GPay-logo" transform="translate(48.759036, 76.981132)">
+                  <g id="Pay" transform="translate(143.569904, 7.624798)" fill="#3C4043">
+                     <path
+                        d="M12.1771332,57.6434717 L12.1771332,96.3774447 L0.0751674892,96.3774447 L0.0751674892,0.762479784 L32.1716854,0.762479784 C39.9139368,0.609983827 47.4306857,3.58365499 52.9179124,9.07350943 C63.8923658,19.4432345 64.5688732,36.9040216 54.2709272,48.1124744 C53.8199223,48.5699623 53.3689173,49.0274501 52.9179124,49.484938 C47.2803507,54.8985445 40.3649417,57.6434717 32.1716854,57.6434717 L12.1771332,57.6434717 Z M12.1771332,12.5046685 L12.1771332,45.901283 L32.4723553,45.901283 C36.9824047,46.053779 41.342119,44.2238275 44.4239861,40.9451644 C50.7380552,34.3115903 50.5877202,23.6368733 44.0481487,17.2320431 C40.9662816,14.182124 36.8320697,12.5046685 32.4723553,12.5046685 L12.1771332,12.5046685 Z"
+                        id="Shape" fill-rule="nonzero"></path>
+                     <path
+                        d="M89.5244796,28.8217358 C98.4694108,28.8217358 105.535155,31.2616712 110.721712,36.0652938 C115.908268,40.8689164 118.463963,47.5787385 118.463963,56.0422642 L118.463963,96.3774447 L106.88817,96.3774447 L106.88817,87.3039353 L106.361997,87.3039353 C101.325775,94.7762372 94.7110364,98.5123881 86.3674451,98.5123881 C79.3017011,98.5123881 73.2883019,96.3774447 68.5527501,92.107558 C63.8923658,88.1426631 61.2615037,82.2715687 61.4118387,76.0954825 C61.4118387,69.3094124 63.9675333,63.9720539 69.0037551,59.9309111 C74.0399768,55.8897682 80.8050509,53.9073208 89.2238097,53.9073208 C96.4398886,53.9073208 102.302953,55.2797844 106.963337,57.8722156 L106.963337,55.0510404 C106.963337,50.8574016 105.159317,46.8925067 102.002283,44.1475795 C98.7700808,41.2501563 94.6358689,39.6489488 90.351322,39.6489488 C83.586248,39.6489488 78.2493562,42.546372 74.3406468,48.3412183 L63.6668633,41.5551482 C69.3795925,33.0916226 78.0238538,28.8217358 89.5244796,28.8217358 Z M73.8896419,76.3242264 C73.8896419,79.5266415 75.3929916,82.5003127 77.8735188,84.3302642 C80.5795484,86.4652075 83.8869179,87.6089272 87.2694549,87.5326792 C92.3808442,87.5326792 97.266731,85.4739838 100.87477,81.8140809 C104.858647,78.0016819 106.88817,73.5030512 106.88817,68.3181887 C103.129795,65.2682695 97.8680709,63.74331 91.1029969,63.819558 C86.2171101,63.819558 82.0828982,65.0395256 78.7755287,67.4032129 C75.5433266,69.7669003 73.8896419,72.7405714 73.8896419,76.3242264 Z"
+                        id="Shape" fill-rule="nonzero"></path>
+                     <polygon id="Path"
+                        points="184.912023 30.9566792 144.471914 125.122933 131.994111 125.122933 147.027609 92.1838059 120.493485 30.9566792 133.647796 30.9566792 152.815506 77.925434 153.041008 77.925434 171.757713 30.9566792">
+                     </polygon>
+                  </g>
+                  <g id="Super-G">
+                     <path
+                        d="M106.813002,56.8809919 C106.813002,53.144841 106.512332,49.40869 105.910992,45.7487871 L54.8722671,45.7487871 L54.8722671,66.8694771 L84.1124204,66.8694771 C82.9097406,73.6555472 79.0010311,79.7553854 73.2883019,83.5677844 L73.2883019,97.2924205 L90.7271594,97.2924205 C100.949938,87.7614232 106.813002,73.6555472 106.813002,56.8809919 Z"
+                        id="Path" fill="#4285F4"></path>
+                     <path
+                        d="M54.8722671,110.559569 C69.45476,110.559569 81.7822282,105.679698 90.7271594,97.2924205 L73.2883019,83.5677844 C68.4024152,86.9226954 62.1635136,88.8288949 54.8722671,88.8288949 C40.7407791,88.8288949 28.7891484,79.1454016 24.5046015,66.1832453 L6.53957156,66.1832453 L6.53957156,80.3653693 C15.7100052,98.893628 34.42671,110.559569 54.8722671,110.559569 Z"
+                        id="Path" fill="#34A853"></path>
+                     <path
+                        d="M24.5046015,66.1832453 C22.2495768,59.3971752 22.2495768,52.0011213 24.5046015,45.1388032 L24.5046015,31.0329272 L6.53957156,31.0329272 C-1.20267983,46.5112668 -1.20267983,64.8107817 6.53957156,80.2891213 L24.5046015,66.1832453 Z"
+                        id="Path" fill="#FBBC04"></path>
+                     <path
+                        d="M54.8722671,22.4931536 C62.6145185,22.3406577 70.0560999,25.3143288 75.6184941,30.7279353 L91.1029969,15.0208518 C81.2560558,5.71859838 68.3272477,0.609983827 54.8722671,0.762479784 C34.42671,0.762479784 15.7100052,12.5046685 6.53957156,31.0329272 L24.5046015,45.2150512 C28.7891484,32.1766469 40.7407791,22.4931536 54.8722671,22.4931536 Z"
+                        id="Path" fill="#EA4335"></path>
+                  </g>
+               </g>
+            </g>
+         </g>
+      </svg>
+      <svg id="microsoft-pay" enable-background="new 0 0 2499.6 2500" viewBox="0 0 2499.6 2500"
+         xmlns="http://www.w3.org/2000/svg">
+         <path d="m1187.9 1187.9h-1187.9v-1187.9h1187.9z" fill="#f1511b" />
+         <path d="m2499.6 1187.9h-1188v-1187.9h1187.9v1187.9z" fill="#80cc28" />
+         <path d="m1187.9 2500h-1187.9v-1187.9h1187.9z" fill="#00adef" />
+         <path d="m2499.6 2500h-1188v-1187.9h1187.9v1187.9z" fill="#fbbc09" />
+      </svg>
+   </div>
+   <section class="tpl-t1 py-2">
+      <div class="container">
+         <div class="row justify-content-between mb-4">
+            <div class="col-auto">
+               <span class="tpl-t1__header__logo">
+                  <img class="logo" alt="Marketplace Logo"
+                     src="https://foost.to/landing-aug-22/wp-content/uploads/2022/08/foost-new-logo1-4.png" />
+               </span>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="tpl-t1 pb-sm-40 pb-24">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-12 pr-md-40">
+               <link rel="stylesheet" type="text/css" href="/landing-aug-22-assets/css/fontawesome-all.css">
+               <link rel="stylesheet" type="text/css" href="/landing-aug-22-assets/css/index.css">
+               <script type="text/javascript">
+                  try {
+
+                  } catch (e) {
+                     if (typeof console !== 'undefined') {
+                        console.error(e);
+                     }
+                  }
+               </script>
+               <link href="https://fonts.googleapis.com/css?family=Poppins|Inter" rel="stylesheet" />
+               <style>
+                  .sc-headline h1,
+                  .sc-headline h2,
+                  .sc-headline h3,
+                  .sc-headline h4,
+                  .sc-headline h5,
+                  .sc-headline h6 {
+                     font-family: "Poppins";
+                     font-weight: 400;
+                     color: #233543
+                  }
+
+                  h1,
+                  h2,
+                  h3,
+                  h4,
+                  h5,
+                  h6 {
+                     font-family: "Poppins";
+                     font-weight: 400;
+                     color: #233543
+                  }
+
+                  p,
+                  .sc-button {
+                     font-family: "Inter";
+                     font-weight: 400;
+                     color: #0b1a26
+                  }
+               </style>
+               <div>
+                  <div class="row section  " style="width: 100%; margin: 0 auto;
+                        background-size: cover;background-repeat: no-repeat;
+                        background-color: transparent;
+                        margin-top: 0px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        padding-left: 0px;
+                        padding-right: 0px;">
+                     <div class="sc-column col-12 sc-root-row" style="padding-left: 0; padding-right: 0;">
+                        <div class="sc-row   " style="
+                              background-size: cover;background-repeat: no-repeat;
+                              background-color: transparent;
+                              padding-top: 30px;
+                              padding-bottom: 0px;
+                              border-radius: 0px;
+                              width: 100%;
+                              margin-right: auto;
+                              margin-top: 0px;
+                              margin-bottom: 0px;
+                              max-width: 100%;
+                              ">
+                           <div class="row" style="margin-left: 0;
+                                 margin-right: 0;
+                                 ">
+                              <div class="sc-column col-12 col-md-12" style="padding-left: 0; padding-right: 0;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div style="width:100%;
+                                             padding-top:0px;padding-bottom:30px;
+                                             padding-left:0px;padding-right:0px;
+                                             display:flex;
+                                             justify-content:
+                                             space-between
+                                             ;">
+                                          <div class="img-fluid">
+                                             <img
+                                                src="https://foost.to/landing-aug-22/wp-content/uploads/2022/08/foost-new-logo1-4.png"
+                                                style="max-width:100%;
+                                                   height: 50px;
+                                                   border-radius: 0px;
+                                                   " alt="Foost" />
+                                          </div>
+                                          <div class="sign-up-btn-eight text-center float-right clearfix">
+                                             <a href="#">Sign In</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div
+                                          style="width:100%;padding-top:0px;padding-bottom:20px;padding-left:0px;padding-right:0px;line-height:1.1"
+                                          class="sc-headline">
+                                          <div class="sc-wysiwyg-contents sc-contents-headline sc-editor-area"
+                                             id="sc51e54003-0fac-46db-80a2-881825e46c45">
+                                             <h1>
+                                                <font style="color:rgb(255, 255, 255)"><strong>You&#x27;re Almost
+                                                      There!</strong></font>
+                                             </h1>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc51e54003-0fac-46db-80a2-881825e46c45 {
+                                       font-size: 20px;
+                                       text-align: center;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc51e54003-0fac-46db-80a2-881825e46c45 {
+                                          font-size: 20px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc51e54003-0fac-46db-80a2-881825e46c45 {
+                                       font-size: 20px;
+                                    }
+
+                                    #sc51e54003-0fac-46db-80a2-881825e46c45 h1 {
+                                       font-size: 2em;
+                                    }
+
+                                    #sc51e54003-0fac-46db-80a2-881825e46c45 h2 {
+                                       font-size: 1.66em;
+                                    }
+
+                                    #sc51e54003-0fac-46db-80a2-881825e46c45 h3 {
+                                       font-size: 1.33em;
+                                    }
+                                 </style>
+
+                                 <style>
+                                    #sc5d10c341-d9b7-4b33-992c-37c47d5322e2 p {
+                                       font-family: "Poppins";
+                                       font-size: 20px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc5d10c341-d9b7-4b33-992c-37c47d5322e2 p {
+                                          font-size: 20px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc5d10c341-d9b7-4b33-992c-37c47d5322e2 p {
+                                       font-size: 20px;
+                                    }
+                                 </style>
+
+                                 <style>
+                                    #sc3294902f-6f2d-47dc-89f9-07d498b310f3 span {
+                                       font-size: 20px;
+                                    }
+
+                                    #sc3294902f-6f2d-47dc-89f9-07d498b310f3 small {
+                                       font-size: 12px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc3294902f-6f2d-47dc-89f9-07d498b310f3 span {
+                                          font-size: 20px;
+                                       }
+
+                                       #sc3294902f-6f2d-47dc-89f9-07d498b310f3 small {
+                                          font-size: 12px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc3294902f-6f2d-47dc-89f9-07d498b310f3 span {
+                                       font-size: 20px;
+                                    }
+
+                                    .mobileCanvas #sc3294902f-6f2d-47dc-89f9-07d498b310f3 small {
+                                       font-size: 12px;
+                                    }
+                                 </style>
+
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div style="width:100%;
+                                             padding-top:30px;
+                                             padding-bottom:0px;
+                                             padding-left:0px;
+                                             padding-right:0px;" class="sc-text">
+                                          <div class="sc-wysiwyg-contents sc-contents-text sc-editor-area"
+                                             id="sce5f6c91d-ac8c-41bd-8893-48dd2b58872c" style="line-height: 1.1;">
+                                             <p style="text-align: center;"><strong>
+                                                   <font style="color:#ffffff">YOUR PLAN</font>
+                                                </strong></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sce5f6c91d-ac8c-41bd-8893-48dd2b58872c p {
+                                       font-size: 16px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sce5f6c91d-ac8c-41bd-8893-48dd2b58872c p {
+                                          font-size: 16px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sce5f6c91d-ac8c-41bd-8893-48dd2b58872c p {
+                                       font-size: 16px;
+                                    }
+                                 </style>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="sc-row plan-box" id="weeklyDiv" style="
+   background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+   background-size: cover;background-repeat: no-repeat;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 10px;
+   border: 1px solid #f4f2ff;
+   width: 100%;
+   margin-right: auto;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   max-width: 100%;
+   cursor:pointer;
+   ">
+                           <div class="row" style="margin-left: 0;
+      margin-right: 0;
+      ">
+                              <div class="sc-column col-12 col-md-6" style="padding-left: 10px; padding-right: 5px;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div
+                                          style="width:100%;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;line-height:1"
+                                          class="sc-headline">
+                                          <div class="sc-wysiwyg-contents sc-contents-headline sc-editor-area"
+                                             id="sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76">
+                                             <p style="text-align:left">
+
+                                                <input type="radio" name="userSelectedPlanWeekly" value="Personal"
+                                                   id="weeklyCheckbox" checked="true" />
+                                                <strong>
+                                                   <font style="color:rgb(255, 255, 255)">Personal</font>
+                                                </strong>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 {
+                                       font-size: 20px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 {
+                                          font-size: 20px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 {
+                                       font-size: 20px;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 h1 {
+                                       font-size: 2em;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 h2 {
+                                       font-size: 1.66em;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76 h3 {
+                                       font-size: 1.33em;
+                                    }
+                                 </style>
+                                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+                                 <style>
+                                    #sc3ee30e83-aa83-4df7-a6dc-12237e634f29 p {
+                                       font-family: "Poppins";
+                                       font-size: 14px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc3ee30e83-aa83-4df7-a6dc-12237e634f29 p {
+                                          font-size: 14px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc3ee30e83-aa83-4df7-a6dc-12237e634f29 p {
+                                       font-size: 14px;
+                                    }
+                                 </style>
+                              </div>
+                              <div class="sc-column col-12 col-md-6" style="padding-left: 5px; padding-right: 10px;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div
+                                          style="width:100%;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;line-height:1"
+                                          class="sc-headline">
+                                          <div class="sc-wysiwyg-contents sc-contents-headline sc-editor-area"
+                                             id="sc7b81617d-3142-496f-988e-9f363011a4e3">
+                                             <p style="text-align:right"><strong>
+                                                   <font style="color:rgb(255, 255, 255)">$9/week</font>
+                                                </strong></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3 {
+                                       font-size: 20px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc7b81617d-3142-496f-988e-9f363011a4e3 {
+                                          font-size: 16px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc7b81617d-3142-496f-988e-9f363011a4e3 {
+                                       font-size: 16px;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3 h1 {
+                                       font-size: 2em;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3 h2 {
+                                       font-size: 1.66em;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3 h3 {
+                                       font-size: 1.33em;
+                                    }
+                                 </style>
+                                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div style="width:100%;
+                  padding-top:0px;
+                  padding-bottom:0px;
+                  padding-left:0px;
+                  padding-right:0px;" class="sc-text">
+                                          <div class="sc-wysiwyg-contents sc-contents-text sc-editor-area"
+                                             id="sc8fb9fc19-56c7-4d60-9843-321522285e31" style="line-height: 1.1;">
+                                             <p style="text-align:right">
+                                                <font style="color:rgb(255, 255, 255)">
+                                                   Billed Weekly
+
+                                                </font>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc8fb9fc19-56c7-4d60-9843-321522285e31 p {
+                                       font-family: "Poppins";
+                                       font-size: 14px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc8fb9fc19-56c7-4d60-9843-321522285e31 p {
+                                          font-size: 14px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc8fb9fc19-56c7-4d60-9843-321522285e31 p {
+                                       font-size: 14px;
+                                    }
+                                 </style>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="sc-row plan-box blink_me" id="monthlyDiv" style="
+      background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+      background-size: cover;background-repeat: no-repeat;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #f4f2ff;
+      width: 100%;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      max-width: 100%;
+      cursor:pointer;
+      ">
+                           <div class="row" style="margin-left: 0;
+         margin-right: 0;
+         ">
+                              <div class="sc-column col-12 col-md-6" style="padding-left: 10px; padding-right: 5px;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div
+                                          style="width:100%;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;line-height:1"
+                                          class="sc-headline">
+                                          <div class="sc-wysiwyg-contents sc-contents-headline sc-editor-area"
+                                             id="sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly">
+                                             <p style="text-align:left">
+
+                                                <input type="radio" name="userSelectedPlanMonthly" value="Personal"
+                                                   id="monthlyCheckbox" />
+                                                <strong>
+                                                   <font style="color:rgb(255, 255, 255)">Personal Monthly</font>
+                                                </strong>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly {
+                                       font-size: 20px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly {
+                                          font-size: 20px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly {
+                                       font-size: 20px;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly h1 {
+                                       font-size: 2em;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly h2 {
+                                       font-size: 1.66em;
+                                    }
+
+                                    #sc2ad90c6d-dd3d-4d78-beb9-399af4e72e76_monthly h3 {
+                                       font-size: 1.33em;
+                                    }
+                                 </style>
+                                 <style>
+                                    #sc3ee30e83-aa83-4df7-a6dc-12237e634f29_monthly p {
+                                       font-family: "Poppins";
+                                       font-size: 14px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc3ee30e83-aa83-4df7-a6dc-12237e634f29_monthly p {
+                                          font-size: 14px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc3ee30e83-aa83-4df7-a6dc-12237e634f29_monthly p {
+                                       font-size: 14px;
+                                    }
+                                 </style>
+                              </div>
+                              <div class="sc-column col-12 col-md-6" style="padding-left: 5px; padding-right: 10px;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div
+                                          style="width:100%;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;line-height:1"
+                                          class="sc-headline">
+                                          <div class="sc-wysiwyg-contents sc-contents-headline sc-editor-area"
+                                             id="sc7b81617d-3142-496f-988e-9f363011a4e3_monthly">
+                                             <p style="text-align:right"><strong>
+                                                   <font style="color:rgb(255, 255, 255)">$28/month</font>
+                                                </strong></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly {
+                                       font-size: 20px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly {
+                                          font-size: 16px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly {
+                                       font-size: 16px;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly h1 {
+                                       font-size: 2em;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly h2 {
+                                       font-size: 1.66em;
+                                    }
+
+                                    #sc7b81617d-3142-496f-988e-9f363011a4e3_monthly h3 {
+                                       font-size: 1.33em;
+                                    }
+                                 </style>
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div style="width:100%;
+                     padding-top:0px;
+                     padding-bottom:0px;
+                     padding-left:0px;
+                     padding-right:0px;" class="sc-text">
+                                          <div class="sc-wysiwyg-contents sc-contents-text sc-editor-area"
+                                             id="sc8fb9fc19-56c7-4d60-9843-321522285e31_monthly"
+                                             style="line-height: 1.1;">
+                                             <p style="text-align:right">
+                                                <font style="color:rgb(255, 255, 255)">
+
+                                                   Billed Monthly
+                                                </font>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+                                    #sc8fb9fc19-56c7-4d60-9843-321522285e31_monthly p {
+                                       font-family: "Poppins";
+                                       font-size: 14px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                       #sc8fb9fc19-56c7-4d60-9843-321522285e31_monthly p {
+                                          font-size: 14px;
+                                       }
+                                    }
+
+                                    .mobileCanvas #sc8fb9fc19-56c7-4d60-9843-321522285e31_monthly p {
+                                       font-size: 14px;
+                                    }
+                                 </style>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="sc-row   " style="
+                              background-size: cover;background-repeat: no-repeat;
+                              background-color: transparent;
+                              padding-top: 0px;
+                              padding-bottom: 0px;
+                              border-radius: 0px;
+                              width: 100%;
+                              margin-right: auto;
+                              margin-top: 0px;
+                              margin-bottom: 0px;
+                              max-width: 100%;
+                              ">
+                           <div class="row" style="margin-left: 0;
+                                 margin-right: 0;
+                                 ">
+                              <div class="sc-column col-12" style="padding-left: 0; padding-right: 0;">
+                                 <div class="sc-element  " style="background-color:transparent;">
+                                    <div class="mobile-column-width" style="width: 100%; margin: 0 auto;">
+                                       <div style="width:100%;
+                                             padding-top:0px;
+                                             padding-bottom:0px;
+                                             padding-left:0px;
+                                             padding-right:0px;" class="sc-bullet">
+                                          <div class="sc-wysiwyg-contents sc-contents-bullet"
+                                             id="sc0638e9c1-0610-41bd-83c4-bfb877cf00aa">
+                                             <div
+                                                style="display: inline-flex; width: 100%; margin-bottom: 16px;font-size: 16px;">
+                                                <div style="vertical-align: top">
+                                                   <i class="far fa-star" style="color: #f0f8ff; font-size: 16px;"></i>
+                                                </div>
+                                                <div style="margin-left: 15px; width: 100%;">
+                                                   <p><strong>
+                                                         <font style="color:#ffffff">Fastest Follower Growth in the
+                                                            Industry</font>
+                                                      </strong></p>
+                                                </div>
+                                             </div>
+                                             <div
+                                                style="display: inline-flex; width: 100%; margin-bottom: 16px;font-size: 16px;">
+                                                <div style="vertical-align: top">
+                                                   <i class="far fa-star" style="color: #f0f8ff; font-size: 16px;"></i>
+                                                </div>
+                                                <div style="margin-left: 15px; width: 100%;">
+                                                   <p><strong>
+                                                         <font style="color:#ffffff">Start Getting Followers In Minutes
+                                                         </font>
+                                                      </strong></p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <style>
+
+                                 </style>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-12">
+
+
+               <a id="sc-checkout"></a>
+               <div class="tpl-t1__col-form bg-white p-sm-40 py-32 px-10" id="checkout">
+
+                  <form id="payment-form" name="payment-form" method="POST"
+                     action="">
+                     <input type="hidden" name="_token" value="WX1rf9rSU2TNbWEMUV2Q5q78gFOzQRKetcY8Si0z">
+                     <input type="hidden" name="plan" value="individual">
+                     <input type="hidden" name="payment_method_token" id="payment_method_token">
+                     <input type="hidden" name="duration" value="week">
+                     <input type="hidden" name="user_country" value="Pakistan">
+                     <input type="hidden" name="instaUserDetails" id="instaUserDetails" />
+                     <input type="hidden" name="selectedPlanPrice" value="9" id="selectedPlanPrice" />
+                     <input type="hidden" name="aug22Landing" value="1" />
+                     <input type="hidden" name="wpPlanName" value="personal-weekly" />
+                     <input type="hidden" name="gclid" value="" />
+                     <input type="hidden" name="userOptedForMonthly" value="1" id="userOptedForMonthly" />
+                     <input type="hidden" name="mainLanding" value="main" id="mainLanding" />
+
+                     <h3 class="mb-24 text-uppercase">Contact Information</h3>
+                     <div class="border-bottom mb-16">
+                        <div class="form-group d-flex flex-column">
+                           <label for="checkout_email" class="order-1">Email Address</label>
+                           <input type="email" autofocus="" class="form-control order-2" autofill id="checkout_email"
+                              name="checkout[email]" required spellcheck="false" autocomplete="checkout_email">
+                        </div>
+                     </div>
+
+                     <br />
+                     <h3 class="mb-24 text-uppercase">Instagram Information</h3>
+                     <div class="border-bottom mb-16">
+                        <div class="form-group d-flex flex-column">
+                           <input type="text" class="form-control order-2" autofill id="iguserSearch" name="ig_username"
+                              required spellcheck="false" autocomplete="ig_username">
+                           <label for="ig_username" class="order-1">Instagram Username</label>
+                        </div>
+                     </div>
+
+                     
+
+                     <div class="ei-banner-btn" style="margin-top: 30%;">
+                        <button type="button" id="confirm-purchase" class="mfi submit-button">Place My Order</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="text-center py-md-40 py-sm-20 py-16">
+      <div class="container">
+         <p>&copy; 2022 Foost. All Rights Reserved.</p>
+         <style>
+            section.tpl-t1.py-2 {
+               display: none
+            }
+
+            .plan-box>.row {
+               flex-basis: 100%;
+               align-items: center
+            }
+
+            #sc-checkout {
+               display: block;
+               margin-bottom: 30px
+            }
+
+            .tpl-t1__col-form {
+               padding: 30px !important
+            }
+
+            body {
+               background-position: top-left;
+               background-attachment: fixed;
+               background-size: auto 100%;
+               font-family: "Poppins";
+               font-size: 20px;
+            }
+
+            body:before,
+            body:after {
+               display: block;
+               content: '';
+               position: fixed;
+               z-index: -1;
+            }
+
+            .plan-box {
+               background-size: 80px 80px !important;
+               padding-left: 0px;
+               background-position: 10px 10px;
+               min-height: 100px;
+               align-items: center;
+               max-width: 520px !important;
+               display: flex
+            }
+
+            .tpl-t1__col-form {
+               border-radius: 8px
+            }
+
+            .tpl-t1__col-form .text-uppercase {
+               color: #5A7386 !important;
+               font-size: 16px;
+               font-weight: 700;
+               letter-spacing: 0.5px
+            }
+
+            .tpl-t1__col-form .border-bottom {
+               border: 0px !important
+            }
+
+            #paymentForm label {
+               font: bold normal 12px/1em Poppins, Inter, sans-serif;
+               color: #5A7386;
+               margin: 0 0 5px
+            }
+
+            .form-control,
+            .stripe-processor-form .StripeElement,
+            select {
+               font: bold normal 14px/21px Inter, sans-serif !important;
+               color: #0B1A26;
+               padding: 12.5px !important;
+               border-radius: 4px;
+               height: auto;
+               border: 1px solid #BDC7CF
+            }
+
+            .stripe-processor-form .StripeElement {
+               padding-top: 13.5px;
+               padding-bottom: 13.5px
+            }
+
+            #order-summary-widget #summary-totals .total-row .invoice-item-label {
+               font: bold normal 16px/24px Poppins, Inter, sans-serif;
+               color: #5A7386;
+            }
+
+            #order-summary-widget #summary-totals .total-row .invoice-item-amount {
+               font: bold normal 20px/24px Poppins, Inter, sans-serif;
+               color: #00A39E;
+            }
+
+            #placeOrder {
+               font: bold normal 20px/1em Inter, sans-serif;
+               padding: 30px 20px;
+               transition: 100ms linear background;
+               border: 0 !important
+            }
+
+            #placeOrder:hover,
+            #placeOrder#focus {
+               background-color: #046BD9 !important
+            }
+
+            @media screen and (min-width: 960px) {
+               body:before {
+                  top: 0;
+                  right: 0;
+                  left: 50%;
+                  height: 100%;
+                  background-color: #ffffff
+               }
+
+               body:after {
+                  top: 50%;
+                  left: calc(50% - 90px);
+                  height: 180px;
+                  width: 100vh;
+                  -webkit-transform: translate(-49.85%, -50%) rotate(-90deg);
+                  transform: translate(-49.85%, -50%) rotate(-90deg);
+                  -webkit-background-size: cover;
+                  background-size: cover;
+                  -webkit-transform-origin: center;
+                  transform-origin: center
+               }
+
+               section>.container {
+                  max-width: 100%;
+                  padding: 0 30px;
+               }
+
+               section>.container>.row {
+                  margin: 0 -30px;
+               }
+
+               section>.container>.row>.col-sm-6.col-12.pr-md-40 {
+                  padding: 30px
+               }
+
+               .tpl-t1__col-form {
+                  box-shadow: none;
+                  width: 78%;
+                  min-width: 520px
+               }
+
+               footer .container {
+                  text-align: left
+               }
+            }
+
+            .questions-holder {
+               padding-top: 0 !important;
+               margin-left: -40px;
+               width: calc(100% + 80px);
+               color: #fff
+            }
+
+            @media screen and (max-width: 767px) {
+               body {
+                  -webkit-background-size: cover background-size: cover
+               }
+
+               .plan-box p {
+                  margin-bottom: 0.5em;
+                  padding-right: 10px;
+               }
+
+               .sc-root-row .sc-column.col-12 {
+                  padding-left: 0 !important;
+                  padding-right: 0 !important
+               }
+
+               .plan-box {
+                  background-size: auto 100% !important;
+                  background-position: 0 0;
+                  padding-left: 80px;
+                  min-height: 60px;
+                  overflow: hidden
+               }
+
+               .plan-box .col-12 {
+                  flex-basis: 50%
+               }
+            }
+
+            @media screen and (max-width: 575px) {
+               .questions-holder {
+                  margin-left: 0px
+               }
+
+               .sc-button {
+                  width: 100% !important
+               }
+            }
+
+            @media screen and (max-width: 480px) {
+               .plan-box {
+                  background: rgba(0, 0, 0, 0.2);
+                  background-size: 0 0 !important;
+                  padding-left: 10px;
+               }
+            }
+
+            .sc-widget .question-holder2 .active-question.questions-content .content-questions {
+               padding: 0 !important
+            }
+
+            strike {
+               opacity: 0.8
+            }
+
+            .sc-widget .questions-content {
+               border-top: none !important;
+               color: inherit;
+               margin-bottom: 15px;
+               border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+               max-width: 540px
+            }
+
+            .question-title:hover,
+            .active-question .question-title {
+               opacity: 0.7
+            }
+
+            .question-holder2 .question-title h3 {
+               padding: 0 !important;
+               font-family: Poppins, sans-serif !important;
+               font-weight: 700;
+               font-size: 15px;
+               text-transform: uppercase;
+               letter-spacing: 0.5px;
+               color: #ffffff !important;
+               margin-bottom: 15px;
+            }
+
+            .sc-widget .faq-icon-collapsed,
+            .sc-widget .faq-icon-expanded {
+               float: right;
+               padding: 0 !important;
+               color: #ffffff !important;
+               opacity: 1;
+            }
+
+            .sc-widget .question-holder2 .content-questions {
+               padding: 0 !important;
+            }
+
+            .sc-widget .question-holder2 .content-questions ul {
+               margin: 0 0 0 2px;
+               padding: 0 0 0 15px;
+               font-size: 14px;
+               color: #ffffff;
+            }
+
+            .sc-widget .question-holder2 .content-questions ul>li {
+               margin-bottom: 15px
+            }
+
+            .price-item-detail .ng-binding {
+               font: 700 normal 13px/1em Inter, sans-serif;
+               letter-spacing: 0;
+               display: block;
+               width: auto;
+               text-align: right !important;
+               margin: 1em auto 0;
+               color: #233543 !important;
+            }
+
+            .tpl-t1__terms a {
+               font: inherit;
+               color: inherit !important;
+               text-decoration: underline
+            }
+
+            .g-recaptcha-container {
+               margin: 15px 0 30px;
+            }
+
+            .g-recaptcha>div {
+               margin: 0 auto
+            }
+
+            footer.py-md-40 {
+               padding-top: 0 !important;
+               padding-bottom: 0 !important;
+               margin: 0 !important
+            }
+
+            footer .container {
+               max-width: 100%;
+               margin: 0;
+               padding: 0 30px 30px;
+               font-size: 12px;
+               color: #fff
+            }
+
+            footer .container p {
+               color: inherit
+            }
+         </style>
+      </div>
+   </footer>
+   <modalscreen></modalscreen>
+   <div class="funnel-item"></div>
+   <div class="error-modal"></div>
+   <processing></processing>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>
