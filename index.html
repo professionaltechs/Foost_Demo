@@ -28,6 +28,7 @@
 <body
     class="home page-template page-template-layouts page-template-home-page-layout page-template-layoutshome-page-layout-php page page-id-40 wp-custom-logo wp-embed-responsive app-eight-home elementor-default elementor-kit-7 elementor-page elementor-page-40"
     id="" data-spy="scroll" data-target="nav" data-offset="50">
+    
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
@@ -175,6 +176,7 @@
             <div class="sign-up-btn-eight text-center float-right clearfix">
                 <a href="#">Sign In</a>
             </div>
+            <!-- <button onclick="getLocation()" style="z-index: 300; border: 3px solid black;">jahsdjkhasjkdhjkas</button> -->
         </div>
         <!-- /desktop-menu -->
         <div class="appi-ei-mobile_menu relative-position">
@@ -363,12 +365,12 @@
                                                             <p>
                                                             <div class="map-responsive">
                                                                 <div>
-                                                                    <iframe width="280" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=280&cp=25.067812883939666~66.94755205394654&lvl=9&typ=s&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                                                                    <iframe width="280" height="280" id="mapIframe" frameborder="0" src="" scrolling="no">
                                                                     </iframe>
                                                                     <div style="white-space: nowrap; text-align: center; width: 280px; padding: 6px 0;">
-                                                                       <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=25.067812883939666~66.94755205394654&amp;sty=r&amp;lvl=9&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                                                                       <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=25.067812883939666~66.94755205394654&amp;sty=r&amp;lvl=9&amp;rtp=~pos.25.067812883939666_66.94755205394654____&amp;FORM=MBEDLD">Get Directions</a>
-                                                                   </div>
+                                                                        <a id="largeMapLink" target="_blank" href="">View Larger Map</a> &nbsp; | &nbsp;
+                                                                        <a id="dirMapLink" target="_blank" href="">Get Directions</a>
+                                                                    </div>
                                                                </div>
 
 
@@ -384,9 +386,9 @@
                                                     data-wow-duration="1500ms">
                                                     <div
                                                         class="eight-feature-box text-center position-relative dynamic_feature6233707">
-                                                        <div class="feature-icon8 position-relative"><img
-                                                                decoding="async" src="https://foost.io/flags/pk.png"
-                                                                class="m-auto" alt><span class="ei-icon-bg"></span>
+                                                        <div class="feature-icon8 position-relative">
+                                                            <img id="flag" decoding="async" src="" class="m-auto" alt>
+                                                            <span class="ei-icon-bg"></span>
                                                         </div> 
                                                         <div class="feature-text8 appeight-headline pera-content">
                                                             <h3>Local To <span class="location1"></span></h3>
@@ -453,7 +455,7 @@
                                                             <div class="col-md-6">
                                                                 <div
                                                                     class="eight-section-title appeight-headline pera-content">
-                                                                    <span class="eg-title-tag" style="margin-left: ;">
+                                                                    <span class="eg-title-tag" style="">
                                                                         Frequently Asked Questions<i
                                                                             class="square-shape d-block"><i></i><i></i>
                                                                             <i></i><i></i></i>
@@ -1824,10 +1826,12 @@
             url: "https://foost.to/landing-aug-22-get-ip-details",
             dataType: "json",
             success: function (data) {
+                console.log(data)
                 jQuery('.demonym').html('<strong>' + data.demonym + '</strong>');
                 jQuery('.demonym1').html(data.demonym);
                 jQuery('.location').html('<strong>' + data.mainCountry + '</strong>');
                 jQuery('.location1').html(data.mainCountry);
+                document.getElementById('flag').src = data.flagUrl
                 // 		jQuery('img.m-auto').attr('src', data.flagUrl);
                 jQuery('img[src="na"]').attr('src', data.flagUrl);
 
@@ -2029,6 +2033,16 @@
                 window.location.href = "https://professionaltechs.github.io/Foost_Demo/bussiness.html"
             }
         }
+    </script>
+
+    <script>
+
+        $.getJSON('http://ip-api.com/json', function(data) {
+            document.getElementById('mapIframe').src = `https://www.bing.com/maps/embed?h=400&w=500&cp=${data.lat}~${data.lon}&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8`
+            document.getElementById('largeMapLink').href= `https://www.bing.com/maps?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD`
+            document.getElementById('dirMapLink').href= `https://www.bing.com/maps/directions?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;rtp=~pos.${data.lat}_${data.lon}____&amp;FORM=MBEDLD`
+        });
+
     </script>
 
 </body>
