@@ -2037,7 +2037,7 @@
 
     <script>
 
-        $.getJSON('http://ip-api.com/json', function(data) {
+        $.getJSON('//ip-api.com/json', function(data) {
             document.getElementById('mapIframe').src = `https://www.bing.com/maps/embed?h=400&w=500&cp=${data.lat}~${data.lon}&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8`
             document.getElementById('largeMapLink').href= `https://www.bing.com/maps?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD`
             document.getElementById('dirMapLink').href= `https://www.bing.com/maps/directions?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;rtp=~pos.${data.lat}_${data.lon}____&amp;FORM=MBEDLD`
