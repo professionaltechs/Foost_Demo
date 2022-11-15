@@ -224,10 +224,10 @@
                                                 <div class="eight-banner-content text-center">
                                                     <div class="banner-content-box appeight-headline pera-content">
                                                         <h1 class="cd-headline clip is-full-width">
-                                                            <p style="font-weight: 400; font-size: 20px;"> The Best
+                                                            <p style="font-weight: 400; line-height: 1.4; font-size: 20px;"> The Best
                                                                 Service For Instagram Growth</p>
 
-                                                            <span style="font-size:45px; color: #fff;">Get 35,000
+                                                            <span style="font-size:33px; line-height: 1.4; color: #fff;">Get 35,000
                                                                 Instagram Followers For <br />$9/Week </span>
                                                             <span class="cd-words-wrapper"><b
                                                                     class="is-visible"></b></span>
@@ -240,8 +240,8 @@
                                                         <br />
 
 
-                                                        <p style="color: #fff; font-size: 35px; 
-    font-family: 'Poppins'; font-weight: 600; line-height:1.8; margin-bottom: 5px;" class="top-text-after-video">
+                                                        <p style="color: #fff; font-size: 30px; 
+    font-family: 'Poppins'; font-weight: 600; line-height:1.4; margin-bottom: 5px;" class="top-text-after-video">
                                                             Signup in 60 seconds
                                                             <br />
                                                             Start Getting Followers In 5 Minutes
@@ -367,8 +367,8 @@
                                                                 <div>
                                                                     <iframe width="280" height="280" id="mapIframe" frameborder="0" src="" scrolling="no">
                                                                     </iframe>
-                                                                    <div style="white-space: nowrap; text-align: center; width: 280px; padding: 6px 0;">
-                                                                        <a id="largeMapLink" target="_blank" href="">View Larger Map</a> &nbsp; | &nbsp;
+                                                                    <div style="white-space: nowrap; text-align: center; width: 210px; padding: 6px 0;">
+                                                                        <a id="largeMapLink" target="_blank" href="">Larger Map</a> &nbsp; | &nbsp;
                                                                         <a id="dirMapLink" target="_blank" href="">Get Directions</a>
                                                                     </div>
                                                                </div>
@@ -643,7 +643,7 @@
                                         </div>
                                         <div class="eight-service-text position-relative appeight-headline wow fadeFromRight"
                                             data-wow-delay="300ms" data-wow-duration="1500ms">
-                                            <div class="ei-service-slide-mbl"
+                                            <!-- <div class="ei-service-slide-mbl"
                                                 data-background="https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/2021/07/smu1.png">
                                                 <div class="slide-inner">
                                                     <div class="ei-service-slide">
@@ -654,7 +654,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <h2></h2>
                                         </div>
                                     </div>
@@ -664,6 +664,7 @@
                                     <div class="s-shape-bg2 text-center"><img decoding="async"
                                             src="https://themexriver.com/appilo-theme/app-showcase/wp-content/uploads/sites/4/2021/07/s-shape4.png">
                                     </div>
+                                    
                                 </section>
                             </div>
                         </div>
@@ -1791,7 +1792,22 @@
                         </div>
                         <div class="col-md-8">
                             <div class="ei-copyright-menu ul-li-block">
-                            </div>
+                                <ul id="menu-terms-menu" class="">
+                                    <li 
+                                        itemscope="itemscope" 
+                                        itemtype="https://www.schema.org/SiteNavigationElement" 
+                                        id="menu-item-4157" 
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4157 nav-item">
+                                            <a title="Privacy Policy" href="">Privacy Policy</a>
+                                    </li>
+                                    <li 
+                                        itemscope="itemscope" 
+                                        itemtype="https://www.schema.org/SiteNavigationElement" 
+                                        id="menu-item-4156" 
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4156 nav-item">
+                                            <a title="Terms &#038; Conditions" href="">Terms &#038; Conditions</a>
+                                    </li>
+    </ul>                        </div>
                         </div>
                     </div>
                 </div>
@@ -1950,10 +1966,10 @@
         id='uikit-js'></script>
     <script type='text/javascript'
         src='https://foost.to/landing-aug-22/wp-content/themes/appilo/js/sass-landing.js?ver=6.1.7.5'
-        id='sass-landing-js'></script>
+        id='sass-landing-js'></script> 
     <script type='text/javascript'
         src='https://foost.to/landing-aug-22/wp-content/themes/appilo/js/saas-app.js?ver=6.1.7.5'
-        id='saas-app-js'></script>
+        id='saas-app-js'></script> 
     <script type='text/javascript'
         src='https://foost.to/landing-aug-22/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.3'
         id='elementor-webpack-runtime-js'></script>
@@ -2042,6 +2058,13 @@
             document.getElementById('largeMapLink').href= `https://www.bing.com/maps?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD`
             document.getElementById('dirMapLink').href= `https://www.bing.com/maps/directions?cp=${data.lat}~${data.lon}&amp;sty=r&amp;lvl=11&amp;rtp=~pos.${data.lat}_${data.lon}____&amp;FORM=MBEDLD`
         });
+
+        // $.getJSON('https://ipapi.co/json/', function(data) {
+        //     document.getElementById('mapIframe').src = `https://www.bing.com/maps/embed?h=400&w=500&cp=${data.latitude}~${data.longitude}&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8`
+        //     document.getElementById('largeMapLink').href= `https://www.bing.com/maps?cp=${data.latitude}~${data.longitude}&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD`
+        //     document.getElementById('dirMapLink').href= `https://www.bing.com/maps/directions?cp=${data.latitude}~${data.longitude}&amp;sty=r&amp;lvl=11&amp;rtp=~pos.${data.lat}_${data.lon}____&amp;FORM=MBEDLD`
+        //     console.log(data.latitude, data.longitude)
+        // });
 
     </script>
 
