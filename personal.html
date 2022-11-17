@@ -1927,6 +1927,31 @@
                         </div>
                      </div>
 
+                     <br/>
+                        <h3 class="mb-24 text-uppercase">Payment Information</h3>
+                        <div class="border-bottom mb-16">
+                           <div class="form-group d-flex flex-column">
+                              <label for="checkout_credit_card_name">
+                                 Name on card
+                              </label>
+                              <input tabindex="0" class="form-control order-2" autocomplete="cc-name" data-persist="credit_card_name" 
+                                 id="checkout_credit_card_name" name="checkout[credit_card][name]" placeholder="Name on card" size="30" type="text"
+                                 >
+                           </div>
+
+                           <div class="form-group d-flex flex-column">
+                              <label for="checkout_credit_card_name">
+                                 Card number
+                              </label>
+                              <div id="card-element" class="form-control order-2"><!--Stripe.js injects the Card Element--></div>
+                           </div>
+
+                           <div class="form-group d-flex flex-column" data-zip-section="1">
+                              <label for="checkout_shipping_address_zip" class="order-1">Zip</label>
+                              <input type="text" class="form-control order-2" autofill id="checkout_shipping_address_zip" name="checkout[shipping_address][zip]" required spellcheck="false" 
+                               autocomplete="address_zip">
+                           </div>
+                        </div>
                      
 
                      <div class="ei-banner-btn" style="margin-top: 30%;">
@@ -2250,6 +2275,37 @@
    <processing></processing>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+   <script>
+      $(function() {
+      var province_label = "State",
+            province_placeholder = "State", // This is not used by the Cresponsive_checkout_general_v2.js file
+            zip_code_label = "ZIP code",
+            postal_code_placeholder = "ZIP code";
+      // Update window.Countries with translations
+      // Will eventually allow us to use additional translations for "Postal code", "Zip code", "Province", "State" and "Region"
+
+      for (key in window.Countries) {
+         var country = window.Countries[key];
+         country['label'] = country['label'] ? province_label : country['label'];
+         country['province_label'] = country['province_label'] ? province_label : country['province_label'];
+         country['zip_label'] = country['zip_label'] ? zip_code_label : country['zip_label'];
+         country['zip_placeholder'] = country['zip_placeholder'] ? postal_code_placeholder : country['zip_placeholder'];
+      }
+      // Translation for State/Province
+      $('label[for="checkout_shipping_address_province"]').text(province_label);
+      $('#checkout_shipping_address_province option:first-child').text(province_placeholder);
+      $('#checkout_shipping_address_province option:first-child').val('');
+      // Translation for Zip/Postal code
+      $('label[for="checkout_shipping_address_zip"]').text(zip_code_label);
+      $('#checkout_shipping_address_zip').attr('placeholder', postal_code_placeholder);
+
+      $('#checkout_shipping_address_country').trigger('change');
+      });
+   </script>
+
+
 
 </body>
 

@@ -113927,7 +113927,7 @@ a:focus {
     right: 0;
     width: 2px;
     height: 70px;
-    background-color: #aebcb9
+    background-color: #aebcb9;
 }
 
 .cd-headline.clip b {
@@ -115586,6 +115586,13 @@ a:focus {
 .ei-newslatter-section .ei-newslatter-contnet .ei-newslatter-form form .nws-button {
     top: 12px;
     right: 12px
+}
+
+@media screen and (max-width: 480px){
+    .ei-newslatter-section .ei-newslatter-contnet .ei-newslatter-form form .nws-button {
+        top: 24px;
+        right: 12px
+    }
 }
 
 .ei-newslatter-section .ei-newslatter-contnet .ei-newslatter-form form .nws-button button {
@@ -124719,3 +124726,64 @@ button {
     font-size: 20px;
 }
 
+@media (max-width: 600px) {
+    .cd-words-wrapper::after{
+        content: none !important;
+        height: 0px !important;
+        width: 0px !important;
+    }
+    .cd-headline.clip > .cd-words-wrapper{
+        display: none !important;
+        padding: 0 !important;
+    }
+    .eight-banner-section .eight-banner-content h1 {
+        padding: 0px !important;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .main-header-eight .appheader-content .sign-up-btn-eight{
+        width: 80px;
+        margin-right: 35px;
+    }
+    .eight-banner-section {
+        line-height: 1.5;
+        margin-bottom: -40px;
+        padding-top:130px;
+    }
+	#testimonial-scroller .owl-item {
+        opacity: 1;
+        -webkit-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        transition: opacity 500ms;
+        display: block;
+        position: relative;
+        float: none;
+		margin-bottom: 40px;
+    }
+	#testimonial-scroller .owl-dots {
+		display:none;
+	}
+	
+	#testimonial-scroller .owl-item:nth-child(2n)  .test--quote-icon {
+        left: 10px;
+    }
+	#testimonial-scroller .owl-item:nth-child(2n) .ei-testimonial-img {
+        right: 0;
+        left: 50%;
+    }
+	#testimonial-scroller .owl-item:nth-child(2n)  .ei-testimonial-text {
+        margin-left: -32%;
+        display: inline-block;
+        width: 42%;
+    }
+	.ei-testimonial-section .ei-testimonial-img-text::before {
+		display:none;
+	}
+	#second-start-now-btn{
+		width:100%
+	}
+	#second-start-now-btn .elementor-button-text {
+		flex-grow: 0;
+	}
+}
