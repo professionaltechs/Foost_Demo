@@ -115590,7 +115590,7 @@ a:focus {
 
 @media screen and (max-width: 480px){
     .ei-newslatter-section .ei-newslatter-contnet .ei-newslatter-form form .nws-button {
-        top: 24px;
+        top: 26px;
         right: 12px
     }
 }
@@ -124742,6 +124742,12 @@ button {
   }
 
 @media screen and (max-width: 600px) {
+    .top-text-before-video{
+        font-size: 30px !important;
+    }
+    .top-text-after-video{
+        font-size: 22px !important;
+    }
     .main-header-eight .appheader-content .sign-up-btn-eight{
         width: 80px;
         margin-right: 35px;
