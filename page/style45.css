@@ -2,7 +2,7 @@
     font-family: 'appilo';
     src: url('fonts/appilo.eot?e1ausr');
     src: url('fonts/appilo.eot?e1ausr#iefix') format('embedded-opentype'),
-        url('fonts/appilo.ttf?e1ausr') format('truetype'),
+        url('https://foost.to/landing-aug-22/wp-content/plugins/appilo-core/assets/appilo-icons-2/fonts/appilo.ttf?e1ausr') format('truetype'),
         url('fonts/appilo.woff?e1ausr') format('woff'),
         url('fonts/appilo.svg?e1ausr#appilo') format('svg');
     font-weight: normal;
